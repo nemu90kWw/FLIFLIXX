@@ -1,0 +1,36 @@
+<flex-config>
+  <use-network>false</use-network>
+  
+  <default-size>
+    <width>640</width>
+    <height>400</height>
+  </default-size>
+  <default-background-color>0x000000</default-background-color>
+  <default-frame-rate>60</default-frame-rate>
+  
+  <default-script-limits>
+    <max-recursion-depth>65535</max-recursion-depth>
+    <max-execution-time>7</max-execution-time>
+  </default-script-limits>
+  
+  <compiler>
+    <incremental>true</incremental>
+    <accessible>true</accessible>
+    <library-path></library-path>
+    
+    <warn-duplicate-variable-def>false</warn-duplicate-variable-def>
+    <warn-deprecated-event-handler-error>true</warn-deprecated-event-handler-error>
+    <warn-deprecated-function-error>true</warn-deprecated-function-error>
+    <warn-deprecated-property-error>true</warn-deprecated-property-error>
+  </compiler>
+  
+  <metadata>
+    <title>FLIFLIXX for ActionScript3.0</title>
+    <description></description>
+    <publisher>◆nemu90kWw.</publisher>
+    <creator>◆nemu90kWw.</creator>
+    <language>ja-JP</language>
+  </metadata>
+  
+  <benchmark>true</benchmark>
+</flex-config>

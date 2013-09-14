@@ -1,0 +1,839 @@
+
+<fliflixx>
+  <stage>
+    
+    <!-- STAGE 1-1 導入面(FLIXX 1-1) -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="64" y="216"/>
+    </area>
+    
+    <!-- STAGE 1-2 壁付き -->
+    <area>
+      <ebifly x="100" y="326"/>
+      
+      <mogler x="540" y="106"/>
+      
+      <block color="BLUE" x="424" y="176" width="400" height="32"/>
+    </area>
+    
+    <!-- STAGE 1-3 二匹 -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="96" y="144"/>
+      <mogler x="96" y="288"/>
+      
+      <block color="RED" x="96" y="216" width="32" height="32"/>
+    </area>
+    
+    <!-- STAGE 1-4 隙間 -->
+    <area>
+      <ebifly x="550" y="100"/>
+      
+      <mogler x="120" y="150"/>
+      
+      <block color="RED"  x="400" y="80"  width="32" height="16"/>
+      <block color="BLUE" x="400" y="120" width="32" height="16"/>
+      <block color="RED"  x="400" y="160" width="32" height="16"/>
+      <block color="BLUE" x="400" y="200" width="32" height="16"/>
+      <block color="RED"  x="400" y="240" width="32" height="16"/>
+      <block color="BLUE" x="400" y="280" width="32" height="16"/>
+    </area>
+    
+    <!-- STAGE 1-5 大曲がり -->
+    <area>
+      <ebifly x="160" y="345"/>
+      
+      <mogler x="79" y="94"/>
+      
+      <block x="256" y="155" width="480" height="32"/>
+      <block x="528" y="270" width="192" height="32"/>
+    </area>
+    
+    <!-- STAGE 1-6 Ｕターン -->
+    <area>
+      <ebifly x="320" y="216"/>
+      
+      <mogler x="452" y="103"/>
+      <block x="380" y="103" width= "16" height="111"/>
+      <block x="380" y="167" width= "16" height= "16"/>
+      <block x="452" y="167" width="128" height= "16"/>
+      
+      <mogler x="188" y="328"/>
+      <block x="260" y="328" width= "16" height="111"/>
+      <block x="260" y="265" width= "16" height= "16"/>
+      <block x="188" y="265" width="128" height= "16"/>
+    </area>
+    
+    <!-- STAGE 1-7 渦巻きカーブ -->
+    <area>
+      <ebifly x="568" y="352"/>
+      
+      <mogler x="196" y="218"/>
+      
+      <block color="BLUE" x="498" y="273" width= "16" height="222"/>
+      <block color="BLUE" x="315" y="154" width="381" height= "16"/>
+      <block color="BLUE" x="133" y="225" width= "16" height="126"/>
+      <block color="BLUE" x="277" y="280" width="272" height= "16"/>
+      
+      <block color="BLUE" x="265" y="256" width="32" height="32"/>
+      <block color="BLUE" x="265" y="178" width="32" height="32"/>
+    </area>
+    
+    <!-- STAGE 1-8 十字路 -->
+    <area>
+      <ebifly x="320" y="216"/>
+      
+      <mogler x="320" y= "88"/>
+      <mogler x= "64" y="216"/>
+      <mogler x="320" y="344"/>
+      <mogler x="576" y="216"/>
+      
+      <block x="144" y="108" width="256" height="120"/>
+      <block x="496" y="108" width="256" height="120"/>
+      <block x="144" y="324" width="256" height="120"/>
+      <block x="496" y="324" width="256" height="120"/>
+    </area>
+    
+  </stage>
+  
+  <stage>
+    
+    <!-- STAGE 2-1 移動系導入面 縦(FLIXX 2-1) -->
+    <area>
+      <ebifly x="512" y="216"/>
+      <mogler type="VERTICAL" x="64" y="116" speed="5" range="200"/>
+      <block x="300" y="216" width="32" height="32"/>
+    </area>
+    
+    <!-- STAGE 2-2 移動系導入面 横(FLIXX 3-7) -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler type="HORIZONTAL" x="96" y="216" speed="4" range="200"/>
+      
+      <block type="HORIZONTAL" x= "44" y="216" width="16" height="72" speed="4" range="200"/>
+      <block type="HORIZONTAL" x="148" y="216" width="16" height="72" speed="4" range="200"/>
+    </area>
+    
+    <!-- STAGE 2-3 バリア(FLIXX 2-3) -->
+    <area>
+      <ebifly x="480" y="216"/>
+      
+      <mogler x="160" y="216"/>
+      
+      <block color="RED" x="564" y="108" width="120" height="120"/>
+      <block color="RED" x="576" y="216" width= "96" height= "96"/>
+      <block color="RED" x="564" y="324" width="120" height="120"/>
+      <block color="RED" x= "76" y="108" width="120" height="120"/>
+      <block color="RED" x= "64" y="216" width= "96" height= "96"/>
+      <block color="RED" x= "76" y="324" width="120" height="120"/>
+      
+      <block color="BLUE" x="183" y="126" width="20" height="20"/>
+      <block color="BLUE" x="199" y="146" width="20" height="20"/>
+      <block color="BLUE" x="211" y="166" width="20" height="20"/>
+      <block color="BLUE" x="219" y="186" width="20" height="20"/>
+      <block color="BLUE" x="223" y="206" width="20" height="20"/>
+      <block color="BLUE" x="223" y="226" width="20" height="20"/>
+      <block color="BLUE" x="219" y="246" width="20" height="20"/>
+      <block color="BLUE" x="211" y="266" width="20" height="20"/>
+      <block color="BLUE" x="199" y="286" width="20" height="20"/>
+      <block color="BLUE" x="183" y="306" width="20" height="20"/>
+    </area>
+    
+    <!-- STAGE 2-4 地震 -->
+    <area>
+      <ebifly x="367" y="80"/>
+      
+      <mogler type="CIRCLE" x="170" y="226" speed="15" range="10" init="10"/>
+      <mogler type="CIRCLE" x="307" y="325" speed="15" range="10" init="150"/>
+      <mogler type="CIRCLE" x="571" y="231" speed="15" range="10" init="70"/>
+      
+      <block type="CIRCLE" x= "89" y="211" width="60" height="60" speed="40" range="5" init="30"/>
+      <block type="CIRCLE" x="128" y="306" width="60" height="60" speed="40" range="5" init="240"/>
+      <block type="CIRCLE" x="251" y="218" width="60" height="60" speed="40" range="5" init="190"/>
+      <block type="CIRCLE" x="333" y="183" width="60" height="60" speed="40" range="5" init="60"/>
+      <block type="CIRCLE" x="408" y="264" width="60" height="60" speed="40" range="5" init="210"/>
+      <block type="CIRCLE" x="487" y="215" width="60" height="60" speed="40" range="5" init="130"/>
+      <block type="CIRCLE" x="548" y="319" width="60" height="60" speed="40" range="5" init="80"/>
+    </area>
+    
+    <!-- STAGE 2-5 ヘアピン千鳥足 -->
+    <area>
+      <ebifly x="520" y="320"/>
+      
+      <mogler type="CIRCLE" x="130" y="185" speed="4.5" range="40" init="250"/>
+      
+      <block color="BLUE" type="CIRCLE" x="401" y= "94" width="185" height= "16" speed="4.5" range="36" init="24"/>
+      <block color="BLUE" type="CIRCLE" x="301" y="179" width= "16" height="186" speed="4.5" range="37" init="21"/>
+      <block color="BLUE" type="CIRCLE" x="190" y="133" width="205" height= "16" speed="4.5" range="38" init="18"/>
+      <block color="BLUE" type="CIRCLE" x= "80" y="183" width= "16" height="116" speed="4.5" range="39" init="15"/>
+      <block color="BLUE" type="CIRCLE" x="150" y="233" width="125" height= "16" speed="4.5" range="40" init="12"/>
+      <block color="BLUE" type="CIRCLE" x="221" y="263" width= "16" height="156" speed="4.5" range="41" init="9"/>
+      <block color="BLUE" type="CIRCLE" x="316" y="333" width="175" height= "16" speed="4.5" range="42" init="6"/>
+      <block color="BLUE" type="CIRCLE" x="412" y="273" width= "16" height="136" speed="4.5" range="43" init="3"/>
+      <block color="BLUE" type="CIRCLE" x="487" y="213" width="135" height= "16" speed="4.5" range="44" init="0"/>
+    </area>
+    
+    <!-- STAGE 2-6 回転ブロック -->
+    <area>
+      <ebifly x="540" y="300"/>
+      
+      <mogler type="CIRCLE" x="350" y="166" speed="-2" range="20">
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="2.5" range="70" init="0"/>
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="2.5" range="70" init="170.66666667"/>
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="2.5" range="70" init="85.33333333"/>
+      </mogler>
+      
+      <mogler type="CIRCLE" x="160" y="236" speed="3" range="20" init="50">
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="-4.5" range="90" init="0"/>
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="-4.5" range="90" init="170.66666667"/>
+        <block color="WHITE" type="CIRCLE" width="50" height="50" speed="-4.5" range="90" init="85.33333333"/>
+      </mogler>
+    </area>
+    
+    <!-- STAGE 2-7 タイミング 小 -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler type="HORIZONTAL" x="125" y="216" speed="12" range="80" init="40"/>
+      <block color="WHITE" type="HORIZONTAL" x="125" y="216" width="64" height="64" speed="-12" range="80" init="40"/>
+      
+      <block color="RED"  x="140" y="216" width="100" height="100"/>
+      <block color="BLUE" x="140" y="216" width= "64" height= "64"/>
+      
+      <block color="BLUE" x="320" y="156"/>
+      <block color="BLUE" x="320" y="276"/>
+    </area>
+    
+    <!-- STAGE 2-8 タイミング 大(FLIXX 2-8) -->
+    <area>
+      <ebifly x="532" y="216"/>
+      
+      <mogler type="CIRCLE" x="214" y="216" speed="6" range="130"/>
+      <mogler x="214" y="216">
+        <block color="WHITE" type="CIRCLE" width="48" height="48" speed="6" range="130" init= "51.2"/>
+        <block color="WHITE" type="CIRCLE" width="48" height="48" speed="6" range="130" init="102.4"/>
+        <block color="WHITE" type="CIRCLE" width="48" height="48" speed="6" range="130" init="153.6"/>
+        <block color="WHITE" type="CIRCLE" width="48" height="48" speed="6" range="130" init="204.8"/>
+      </mogler>
+      
+      <block color="BLUE" x="356" y= "64"/>
+      <block color="BLUE" x="404" y="124"/>
+      <block color="BLUE" x="420" y="182"/>
+      <block color="BLUE" x="420" y="250"/>
+      <block color="BLUE" x="404" y="308"/>
+      <block color="BLUE" x="356" y="368"/>
+      
+      <block color="RED" x="268" y="216" width="32" height="64"/>
+    </area>
+    
+  </stage>
+  
+  <stage>
+    
+    <!-- STAGE 3-1 移動壁導入面? 小(FLIXX 3-1) -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="64" y="96"/>
+      
+      <block color="BLUE" x="296" y= "74" width="32" height= "52"/>
+      <block color="BLUE" x="296" y="274" width="32" height="219"/>
+      
+      <block color="WHITE" type="VERTICAL" x="272" y="132" width="16" height="64" speed="-6" range="90" init="50"/>
+    </area>
+    
+    <!-- STAGE 3-2 移動壁導入面? 大(FLIXX 3-3) -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="64" y="216"/>
+      
+      <block color="WHITE" type="VERTICAL" x="216" y="140" width="32" height="184" speed="6" range="150" init="0"/>
+      <block color="WHITE" type="VERTICAL" x="366" y="140" width="32" height="184" speed="6" range="150" init="100"/>
+    </area>
+    
+    <!-- STAGE 3-3 三角波 -->
+    <area>
+      <ebifly x="575" y="330"/>
+      
+      <mogler x="575" y="100"/>
+      
+      <block color="BLUE" x="566" y="216" width="116" height="32"/>
+      
+      <mogler              type="VERTICAL" x="104" y="90"                        speed= "3" range="255" init="135"/>
+      <block color="WHITE" type="VERTICAL" x="170" y="90" width="54" height="54" speed= "3" range="255" init="192"/>
+      <block color="WHITE" type="VERTICAL" x="225" y="90" width="53" height="53" speed= "3" range="255" init="240"/>
+      <block color="WHITE" type="VERTICAL" x="280" y="90" width="52" height="52" speed="-3" range="255" init="228"/>
+      <block color="WHITE" type="VERTICAL" x="335" y="90" width="51" height="51" speed="-3" range="255" init="186"/>
+      <block color="WHITE" type="VERTICAL" x="390" y="90" width="50" height="50" speed="-3" range="255" init="144"/>
+      <block color="WHITE" type="VERTICAL" x="445" y="90" width="49" height="49" speed="-3" range="255" init="102"/>
+      <block color="WHITE" type="VERTICAL" x="500" y="90" width="48" height="48" speed="-3" range="255" init="60"/>
+      
+      <block color="RED" x="80" y= "76" width="128" height="56"/>
+      <block color="RED" x="80" y="356" width="128" height="56"/>
+    </area>
+    
+    <!-- STAGE 3-4 長距離コース -->
+    <area>
+      <ebifly x="570" y="340"/>
+      
+      <mogler x="75" y="92"/>
+      
+      <block color="WHITE" type="HORIZONTAL" x="198" y="132" width="106" height="16" speed="3.7" range="122" init="10"/>
+      <block color="WHITE" type="HORIZONTAL" x="320" y="300" width="106" height="16" speed="3.7" range="122" init="70"/>
+      
+      <block color="BLUE" x="137" y="178" width="16" height="260"/>
+      <block color="BLUE" x="259" y="254" width="16" height="260"/>
+      <block color="BLUE" x="381" y="178" width="16" height="260"/>
+      <block color="BLUE" x="503" y="254" width="16" height="260"/>
+      
+      <block color="RED" x="170" y="196" width="24" height="24"/>
+      <block color="RED" x="320" y="196" width="24" height="24"/>
+      <block color="RED" x="470" y="196" width="24" height="24"/>
+    </area>
+    
+    <!-- STAGE 3-5 風車 -->
+    <area>
+      <ebifly x="600" y="80"/>
+      
+      <mogler x="155" y="180"/>
+      <mogler x="155" y="346"/>
+      
+      <block color="RED"  x= "66" y="216" width="100" height="336"/>
+      <block color="BLUE" x="216" y="226" width="200" height= "16"/>
+      <block color="BLUE" x="266" y="102" width="300" height= "16"/>
+      
+      <block color="WHITE" x="316" y="226" width="40" height="40"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "40" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "80" init="5"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range="110" init="15"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "40" init="170.66666667"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "80" init="175.66666667"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range="110" init="185.66666667"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "40" init="85.33333333"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range= "80" init="90.33333333"/>
+      <block color="WHITE" type="CIRCLE" x="316" y="226" width="40" height="40" speed="-1.85" range="110" init="100.33333333"/>
+    </area>
+    
+    <!-- STAGE 3-6 往復壁 -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="100" y="216"/>
+      
+      <block color="WHITE" type="HORIZONTAL" x="260" y= "80" width="64" height="64" speed= "8" range="140" init=  "0"/>
+      <block color="WHITE" type="HORIZONTAL" x="260" y="148" width="64" height="64" speed="-8" range="140" init="140"/>
+      <block color="WHITE" type="HORIZONTAL" x="260" y="216" width="64" height="64" speed= "8" range="140" init=  "0"/>
+      <block color="WHITE" type="HORIZONTAL" x="260" y="284" width="64" height="64" speed="-8" range="140" init="140"/>
+      <block color="WHITE" type="HORIZONTAL" x="260" y="352" width="64" height="64" speed= "8" range="140" init=  "0"/>
+    </area>
+    
+    <!-- STAGE 3-7 ゴンドラ -->
+    <area>
+      <ebifly x="512" y="216"/>
+      <block color="RED"  x="300" y="344" width="85" height= "43"/>
+      <block color="BLUE" x="300" y="232" width="14" height="224"/>
+      <block color="RED"  x="300" y="109" width="24" height= "24"/>
+      
+      <mogler type="VERTICAL" x="178" y="170" speed="3" range="120" init="20"/>
+      <mogler type="VERTICAL" x="252" y="170" speed="3" range="120" init="20"/>
+      
+      <block color="WHITE" type="VERTICAL" x="216" y="135" width="169" height="23" speed="3" range="120" init="20"/>
+      <block color="WHITE" type="VERTICAL" x="216" y="194" width="169" height="43" speed="3" range="120" init="20"/>
+    </area>
+    
+    <!-- STAGE 3-8 井 -->
+    <area>
+      <ebifly x="454" y="350"/>
+      
+      <mogler x="387" y= "81"/>
+      <mogler x="185" y="149"/>
+      <mogler x="253" y="351"/>
+      <mogler x="454" y="283"/>
+      
+      <block color="RED" x= "84" y="216" width="136" height="336"/>
+      <block color="RED" x="556" y="216" width="136" height="336"/>
+      
+      <block color="RED"  x="320" y= "81" width="68" height="67"/>
+      <block color="RED"  x="454" y= "81" width="67" height="67"/>
+      <block color="RED"  x="185" y="216" width="67" height="68"/>
+      <block color="BLUE" x="320" y="216" width="68" height="68"/>
+      <block color="RED"  x="454" y="216" width="67" height="68"/>
+      <block color="RED"  x="185" y="350" width="67" height="67"/>
+      <block color="RED"  x="320" y="350" width="68" height="67"/>
+      
+      <block color="WHITE" type="HORIZONTAL" x="175" y="283" width="47" height="67" speed="-3.7" range="289" init="269"/>
+      <block color="WHITE" type="VERTICAL"   x="252" y= "71" width="67" height="47" speed= "3.7" range="289" init="229"/>
+      <block color="WHITE" type="HORIZONTAL" x="175" y="148" width="47" height="67" speed= "3.7" range="289" init= "70"/>
+      <block color="WHITE" type="VERTICAL"   x="387" y= "71" width="67" height="47" speed="-3.7" range="289" init="110"/>
+    </area>
+    
+  </stage>
+  
+  <stage>
+    
+    <!-- STAGE 4-1 裏面スタート -->
+    <area>
+      <ebifly x="64" y="216"/>
+      <mogler x="512" y="216"/>
+    </area>
+    
+    <!-- STAGE 4-2 リベンジ2-2 -->
+    <area>
+      <ebifly x="100" y="326"/>
+      
+      <mogler type="CIRCLE" x="560" y="84" speed="0" range="0"/>
+      
+      <block color="BLUE" x="424" y="143" width="400" height="137"/>
+    </area>
+    
+    <!-- STAGE 4-3 退避所 -->
+    <area>
+      <ebifly x="586" y="156"/>
+      
+      <mogler x="55" y="266"/>
+      
+      <block x="320" y= "88" width="608" height="80"/>
+      <block x="320" y="344" width="608" height="80"/>
+      
+      <block x= "92" y="156" width="152" height="56"/>
+      <block x="206" y="276" width= "76" height="56"/>
+      <block x="282" y="156" width= "76" height="56"/>
+      <block x="358" y="276" width= "76" height="56"/>
+      <block x="434" y="156" width= "76" height="56"/>
+      <block x="548" y="276" width="152" height="56"/>
+      
+      <block color="WHITE" type="HORIZONTAL" x="168" y="216" width="64" height="64" speed="5" range="152" init="88"/>
+      <block color="WHITE" type="HORIZONTAL" x="320" y="216" width="64" height="64" speed="5" range="152" init="0"/>
+    </area>
+    
+    <!-- STAGE 4-4 スイッチ -->
+    <area>
+      <ebifly x="573" y="346"/>
+      
+      <mogler x="292" y="204">
+        <block x="-92" y="20" width="96" height="126"/>
+      </mogler>
+      
+      <mogler x="82" y="316">
+        <block x="85" y="-186" width="116" height="61"/>
+      </mogler>
+      
+      <mogler x="62" y="96">
+        <block x="523" y= "94" width="78" height="59"/>
+        <block x="536" y="167" width="51" height="86"/>
+      </mogler>
+      
+      <mogler x="582" y="87"/>
+      
+      <block x="341" y="344" width="187" height= "79"/>
+      <block x="196" y="335" width="103" height= "97"/>
+      <block x="290" y="277" width= "85" height= "55"/>
+      <block x= "62" y="194" width= "93" height="101"/>
+      <block x="130" y="187" width= "43" height= "52"/>
+      <block x="186" y= "74" width= "78" height= "52"/>
+      <block x="283" y="104" width="117" height="113"/>
+      <block x="387" y="117" width= "91" height="139"/>
+      <block x="472" y= "88" width= "79" height= "81"/>
+      <block x="489" y="174" width="113" height= "91"/>
+      <block x="539" y="247" width= "68" height= "55"/>
+    </area>
+    
+    <!-- STAGE 4-5 回転ドア -->
+    <area>
+      <ebifly x="567" y="90"/>
+      
+      <mogler x="567" y="340"/>
+      <mogler x= "73" y="100"/>
+      <mogler x= "73" y="340"/>
+      
+      <block color="WHITE" type="CIRCLE" x="205" y="216" width="16" height="180" speed= "7.3" range="56" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="205" y="216" width="16" height="180" speed= "7.3" range="56" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="435" y="216" width="16" height="180" speed="-7.3" range="56" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="435" y="216" width="16" height="180" speed="-7.3" range="56" init="0"/>
+      
+      <block x="320" y= "83" width="373" height="70"/>
+      <block x="320" y="349" width="373" height="70"/>
+      <block x="494" y="216" width="260" height="70"/>
+      
+      <block color="BLUE" x="186" y="216" width="180" height="70"/>
+    </area>
+    
+    <!-- STAGE 4-6 変形迷路 -->
+    <area>
+      <ebifly x="590" y="348"/>
+      
+      <mogler x="66" y="94"/>
+      
+      <mogler type="CIRCLE" x="366" y="128" speed="3" range="35" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="515" y="261" width= "16" height="176" speed="3" range="25" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="420" y="165" width="205" height= "16" speed="3" range="25" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="358" y="255" width= "81" height= "16" speed="3" range="25" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="310" y="181" width= "16" height="164" speed="3" range="25" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="192" y="141" width= "16" height="116" speed="3" range="25" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="390" y= "91" width="380" height= "16" speed="3" range="25" init="0"/>
+      <block color="RED" x="576" y="96" width="96" height="96"/>
+      
+      <mogler type="CIRCLE" x="186" y="271" speed="3" range="35" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="430" y="264" width= "16" height= "92" speed="3" range="25" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="330" y="318" width="215" height= "16" speed="3" range="25" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="231" y="248" width= "16" height="123" speed="3" range="25" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="147" y="227" width="151" height= "16" speed="3" range="25" init="128"/>
+      <block color="BLUE" x="66" y="264" width="100" height="240"/>
+    </area>
+    
+    <!-- STAGE 4-7 サイクロイド -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler type="CIRCLE" x="210" y="216" speed="3" range="15">
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="0">
+          <block color="WHITE" type="CIRCLE" width="40" height="40" speed="-2" range="40" init="0"/>
+        </block>
+        
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="85.33333333">
+          <block color="WHITE" type="CIRCLE" width="40" height="40" speed="-2" range="40" init="85.33333333"/>
+        </block>
+        
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="170.66666667">
+          <block color="WHITE" type="CIRCLE" width="40" height="40" speed="-2" range="40" init="170.66666667"/>
+        </block>
+        
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="42.66666667">
+          <block color="WHITE" type="CIRCLE" width="48" height="48" speed="7" range="50" init="42.66666667"/>
+        </block>
+        
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="128">
+          <block color="WHITE" type="CIRCLE" width="48" height="48" speed="7" range="50" init="128"/>
+        </block>
+        
+        <block type="CIRCLE" width="16" height="16" speed="3.5" range="65" init="213.33333333">
+          <block color="WHITE" type="CIRCLE" width="48" height="48" speed="7" range="50" init="213.33333333"/>
+        </block>
+      </mogler>
+      
+      <block color="BLUE" x="500" y="148" width="76" height="16"/>
+      <block color="BLUE" x="454" y="148" width="16" height="16"/>
+      <block color="BLUE" x="454" y="216" width="16" height="120"/>
+      <block color="BLUE" x="454" y="284" width="16" height="16"/>
+      <block color="BLUE" x="500" y="284" width="76" height="16"/>
+    </area>
+    
+    <!-- STAGE 4-8 クリアボーナス -->
+    <area>
+      <ebifly x="320" y="216"/>
+      
+      <mogler x="83" y="94"/>
+      <mogler x="192" y="104"/>
+      <mogler x="316" y="100"/>
+      <mogler x="432" y="103"/>
+      <mogler x="562" y="101"/>
+      <mogler x="68" y="209"/>
+      <mogler x="201" y="217"/>
+      <mogler x="427" y="215"/>
+      <mogler x="555" y="211"/>
+      <mogler x="70" y="331"/>
+      <mogler x="197" y="329"/>
+      <mogler x="322" y="330"/>
+      <mogler x="448" y="333"/>
+      <mogler x="537" y="330"/>
+    </area>
+    
+  </stage>
+  
+  <stage>
+    
+    <!-- STAGE Ex1 かたぶつ -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <mogler x="64" y="216">
+        <block color="WHITE" width="64" height="64"/>
+        
+        <block color="BLUE" x="-15" y="-7" width="20" height="4"/>
+        <block color="BLUE" x=" 15" y="-7" width="20" height="4"/>
+        
+        <block color="BLUE" x="0" y="15" width="20" height="4"/>
+      </mogler>
+    </area>
+    
+    <!-- STAGE Ex2 不思議ちゃん -->
+    <area>
+      <ebifly x="96" y="216"/>
+      
+      <block color="BLUE" x="392" y="208" width="16" height="16"/>
+      <block color="RED"  x="392" y="224" width="16" height="16"/>
+      <block color="RED"  x="408" y="208" width="16" height="16"/>
+      <block color="BLUE" x="408" y="224" width="16" height="16"/>
+      
+      <block color="WHITE" type="CIRCLE" x="400" y="216" width="48" height="48" speed="7" range="48" init="128">
+       <mogler type="CIRCLE" speed="-7" range="72" init="112"/>
+       <block color="WHITE" type="CIRCLE" width="48" height="48" speed="-7" range="48" init="0">
+        <block color="WHITE" type="CIRCLE" width="48" height="48" speed="7" range="48" init="0">
+         <block color="WHITE" type="CIRCLE" width="48" height="48" speed="-7" range="48" init="96">
+          <block color="WHITE" type="CIRCLE" width="48" height="48" speed="7" range="48" init="0">
+           <mogler type="STOP" x="40" y="0"/>
+           <block color="WHITE" type="CIRCLE" width="48" height="48" speed="-7" range="48" init="0"/>
+          </block>
+         </block>
+        </block>
+       </block>
+      </block>
+    </area>
+    
+    <!-- STAGE Ex3 二重風車 -->
+    <area>
+      <ebifly x="570" y="336"/>
+      
+      <mogler x="570" y= "96"/>
+      <mogler x= "70" y="336"/>
+      <mogler x= "70" y= "96"/>
+      
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="-3" range="30" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="-3" range="30" init="85.33333333"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="-3" range="30" init="170.66666667"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="48" height="48" speed="-3" range="70" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="48" height="48" speed="-3" range="70" init="85.33333333"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="48" height="48" speed="-3" range="70" init="170.66666667"/>
+      
+      <block color="RED" x="101" y="216" width="170" height="16"/>
+      <block color="RED" x="539" y="216" width="170" height="16"/>
+      
+      <block color="BLUE" x="320" y="288" width="32" height="192"/>
+      
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="16" height="16" speed="2.5" range="120" init="-20"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="16" height="16" speed="2.5" range="120" init="44"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="16" height="16" speed="2.5" range="120" init="108"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="16" height="16" speed="2.5" range="120" init="172"/>
+      
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="24" height="24" speed="2.5" range="130" init="-15"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="24" height="24" speed="2.5" range="130" init="49"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="24" height="24" speed="2.5" range="130" init="113"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="24" height="24" speed="2.5" range="130" init="177"/>
+      
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="2.5" range="140" init="-10"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="2.5" range="140" init="54"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="2.5" range="140" init="118"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="32" height="32" speed="2.5" range="140" init="182"/>
+      
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="56" height="56" speed="2.5" range="140" init="0"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="56" height="56" speed="2.5" range="140" init="64"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="56" height="56" speed="2.5" range="140" init="128"/>
+      <block color="WHITE" type="CIRCLE" x="320" y="216" width="56" height="56" speed="2.5" range="140" init="192"/>
+    </area>
+    
+    <!-- STAGE Ex4 投影 -->
+    <area>
+      <ebifly x="512" y="216"/>
+      
+      <block color="WHITE" type="VERTICAL" x="120" y="146" width="80" height="80" speed="3000" range="1000"/>
+      
+      <block color="WHITE" type="HORIZONTAL" x="120" y="-854" width="64" height="64" speed="420" range="140" init="140">
+        <mogler type="VERTICAL" x="0" y="1000" speed="420" range="140" init="140"/>
+      </block>
+      
+      <block color="BLUE" x="120" y= "98" width="80" height="16"/>
+      <block color="BLUE" x="120" y="194" width="80" height="16"/>
+      <block color="BLUE" x= "72" y="146" width="16" height="80"/>
+      <block color="BLUE" x="168" y="146" width="16" height="80"/>
+      <block color="BLUE" x= "72" y= "98" width="16" height="16"/>
+      <block color="BLUE" x= "72" y="194" width="16" height="16"/>
+      <block color="BLUE" x="168" y= "98" width="16" height="16"/>
+      <block color="BLUE" x="168" y="194" width="16" height="16"/>
+      
+      <block color="RED" x="120" y="286" width="64" height="64"/>
+      <block color="RED" x="260" y="146" width="64" height="64"/>
+      <block color="RED" x="260" y="286" width="64" height="64"/>
+      <block color="RED" x="400" y="146" width="64" height="64"/>
+      <block color="RED" x="400" y="286" width="64" height="64"/>
+    </area>
+    
+    <!-- STAGE Ex5 バウンド -->
+    <area>
+      <ebifly x= "64" y="336"/>
+      <mogler x="576" y="336"/>
+      <mogler x= "64" y= "96"/>
+      <mogler x="576" y= "96"/>
+      
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="0">
+        <block color="WHITE" type="VERTICAL" x="0" y="1069" width="22" height="22" speed="27" range="304" init="0"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="14.3333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1068.5" width="22" height="22" speed="27" range="304" init="9"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="28.6666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1068" width="22" height="22" speed="27" range="304" init="18"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="43">
+        <block color="WHITE" type="VERTICAL" x="0" y="1067.5" width="22" height="22" speed="27" range="304" init="27"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="57.3333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1067" width="22" height="22" speed="27" range="304" init="36"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="71.6666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1066.5" width="22" height="22" speed="27" range="304" init="45"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="86">
+        <block color="WHITE" type="VERTICAL" x="0" y="1066" width="22" height="22" speed="27" range="304" init="54"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="100.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1065.5" width="22" height="22" speed="27" range="304" init="63"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="114.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1065" width="22" height="22" speed="27" range="304" init="72"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="129">
+        <block color="WHITE" type="VERTICAL" x="0" y="1064.5" width="22" height="22" speed="27" range="304" init="81"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="143.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1064" width="22" height="22" speed="27" range="304" init="90"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="157.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1063.5" width="22" height="22" speed="27" range="304" init="99"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="172">
+        <block color="WHITE" type="VERTICAL" x="0" y="1063" width="22" height="22" speed="27" range="304" init="108"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="186.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1062.5" width="22" height="22" speed="27" range="304" init="117"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="200.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1062" width="22" height="22" speed="27" range="304" init="126"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="215">
+        <block color="WHITE" type="VERTICAL" x="0" y="1061.5" width="22" height="22" speed="27" range="304" init="135"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="229.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1061" width="22" height="22" speed="27" range="304" init="144"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="243.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1060.5" width="22" height="22" speed="27" range="304" init="153"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="258">
+        <block color="WHITE" type="VERTICAL" x="0" y="1060" width="22" height="22" speed="27" range="304" init="162"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="272.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1059.5" width="22" height="22" speed="27" range="304" init="171"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="286.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1059" width="22" height="22" speed="27" range="304" init="180"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="301">
+        <block color="WHITE" type="VERTICAL" x="0" y="1058.5" width="22" height="22" speed="27" range="304" init="189"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="315.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1058" width="22" height="22" speed="27" range="304" init="198"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="329.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1057.5" width="22" height="22" speed="27" range="304" init="207"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="344">
+        <block color="WHITE" type="VERTICAL" x="0" y="1057" width="22" height="22" speed="27" range="304" init="216"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="358.333333333333">
+        <block color="WHITE" type="VERTICAL" x="0" y="1056.5" width="22" height="22" speed="27" range="304" init="225"/>
+      </block>
+      <block type="HORIZONTAL" x="120" y="-1000" speed="43" range="400" init="372.666666666667">
+        <block color="WHITE" type="VERTICAL" x="0" y="1056" width="22" height="22" speed="27" range="304" init="234"/>
+      </block>
+      
+      <mogler x="320" y= "216"/>
+      <block color="BLUE" x="260" y="156"/>
+      <block color="BLUE" x="260" y="276"/>
+      <block color="BLUE" x="380" y="156"/>
+      <block color="BLUE" x="380" y="276"/>
+      
+      <block color="RED" x= "64" y="216" width="96" height="152"/>
+      <block color="RED" x="576" y="216" width="96" height="152"/>
+      <block color="BLUE" x="320" y= "56" width="416" height="16"/>
+      <block color="BLUE" x="320" y="376" width="416" height="16"/>
+    </area>
+    
+    <!-- STAGE Ex6 倒壊通路 -->
+    <area>
+      <ebifly x="64" y="216"/>
+      
+      <mogler type="VERTICAL" x="588" y="128" speed="6" range="176" init="24"/>
+      
+      <block color="BLUE" type="VERTICAL" x="612" y= "64" width="24" height="24" speed="6" range="176" init="0"/>
+      <block color="BLUE" type="VERTICAL" x="612" y="192" width="24" height="24" speed="6" range="176" init="0"/>
+      <block color="RED"  type="VERTICAL" x="588" y= "64" width="24" height="24" speed="6" range="176" init="24"/>
+      <block color="RED"  type="VERTICAL" x="588" y="192" width="24" height="24" speed="6" range="176" init="24"/>
+      <block color="BLUE" type="VERTICAL" x="564" y= "64" width="24" height="24" speed="6" range="176" init="48"/>
+      <block color="BLUE" type="VERTICAL" x="564" y="192" width="24" height="24" speed="6" range="176" init="48"/>
+      <block color="RED"  type="VERTICAL" x="540" y= "64" width="24" height="24" speed="6" range="176" init="72"/>
+      <block color="RED"  type="VERTICAL" x="540" y="192" width="24" height="24" speed="6" range="176" init="72"/>
+      
+      <block color="BLUE" type="VERTICAL" x="516" y= "64" width="24" height="24" speed="-6" range="176" init="96"/>
+      <block color="BLUE" type="VERTICAL" x="516" y="192" width="24" height="24" speed="-6" range="176" init="96"/>
+      <block color="RED"  type="VERTICAL" x="492" y= "64" width="24" height="24" speed="-6" range="176" init="120"/>
+      <block color="RED"  type="VERTICAL" x="492" y="192" width="24" height="24" speed="-6" range="176" init="120"/>
+      <block color="BLUE" type="VERTICAL" x="468" y= "64" width="24" height="24" speed="-6" range="176" init="144"/>
+      <block color="BLUE" type="VERTICAL" x="468" y="192" width="24" height="24" speed="-6" range="176" init="144"/>
+      <block color="RED"  type="VERTICAL" x="444" y= "64" width="24" height="24" speed="-6" range="176" init="168"/>
+      <block color="RED"  type="VERTICAL" x="444" y="192" width="24" height="24" speed="-6" range="176" init="168"/>
+      
+      <block color="BLUE" type="VERTICAL" x="420" y= "64" width="24" height="24" speed="6" range="176" init="16"/>
+      <block color="BLUE" type="VERTICAL" x="420" y="192" width="24" height="24" speed="6" range="176" init="16"/>
+      <block color="RED"  type="VERTICAL" x="396" y= "64" width="24" height="24" speed="6" range="176" init="40"/>
+      <block color="RED"  type="VERTICAL" x="396" y="192" width="24" height="24" speed="6" range="176" init="40"/>
+      <block color="BLUE" type="VERTICAL" x="372" y= "64" width="24" height="24" speed="6" range="176" init="64"/>
+      <block color="BLUE" type="VERTICAL" x="372" y="192" width="24" height="24" speed="6" range="176" init="64"/>
+      <block color="RED"  type="VERTICAL" x="348" y= "64" width="24" height="24" speed="6" range="176" init="88"/>
+      <block color="RED"  type="VERTICAL" x="348" y="192" width="24" height="24" speed="6" range="176" init="88"/>
+      
+      <block color="BLUE" type="VERTICAL" x="324" y= "64" width="24" height="24" speed="-6" range="176" init="112"/>
+      <block color="BLUE" type="VERTICAL" x="324" y="192" width="24" height="24" speed="-6" range="176" init="112"/>
+      <block color="RED"  type="VERTICAL" x="300" y= "64" width="24" height="24" speed="-6" range="176" init="136"/>
+      <block color="RED"  type="VERTICAL" x="300" y="192" width="24" height="24" speed="-6" range="176" init="136"/>
+      <block color="BLUE" type="VERTICAL" x="276" y= "64" width="24" height="24" speed="-6" range="176" init="160"/>
+      <block color="BLUE" type="VERTICAL" x="276" y="192" width="24" height="24" speed="-6" range="176" init="160"/>
+      
+      <block color="RED"  type="VERTICAL" x="252" y= "64" width="24" height="24" speed="6" range="176" init="8"/>
+      <block color="RED"  type="VERTICAL" x="252" y="192" width="24" height="24" speed="6" range="176" init="8"/>
+      <block color="BLUE" type="VERTICAL" x="228" y= "64" width="24" height="24" speed="6" range="176" init="32"/>
+      <block color="BLUE" type="VERTICAL" x="228" y="192" width="24" height="24" speed="6" range="176" init="32"/>
+      <block color="RED"  type="VERTICAL" x="204" y= "64" width="24" height="24" speed="6" range="176" init="56"/>
+      <block color="RED"  type="VERTICAL" x="204" y="192" width="24" height="24" speed="6" range="176" init="56"/>
+      <block color="BLUE" type="VERTICAL" x="180" y= "64" width="24" height="24" speed="6" range="176" init="80"/>
+      <block color="BLUE" type="VERTICAL" x="180" y="192" width="24" height="24" speed="6" range="176" init="80"/>
+      
+      <block color="RED"  type="VERTICAL" x="156" y= "64" width="24" height="24" speed="-6" range="176" init="104"/>
+      <block color="RED"  type="VERTICAL" x="156" y="192" width="24" height="24" speed="-6" range="176" init="104"/>
+      <block color="BLUE" type="VERTICAL" x="132" y= "64" width="24" height="24" speed="-6" range="176" init="128"/>
+      <block color="BLUE" type="VERTICAL" x="132" y="192" width="24" height="24" speed="-6" range="176" init="128"/>
+      <block color="RED"  type="VERTICAL" x="108" y= "64" width="24" height="24" speed="-6" range="176" init="152"/>
+      <block color="RED"  type="VERTICAL" x="108" y="192" width="24" height="24" speed="-6" range="176" init="152"/>
+
+      <block color="WHITE" x="320" y= "58" width="608" height="10"/>
+      <block color="WHITE" x="320" y="374" width="608" height="10"/>
+    </area>
+    
+    <!-- STAGE Ex7 この俺を止めてみろ -->
+    <area>
+      <ebifly x="600" y="216"/>
+      
+      <block type="HORIZONTAL" x="0" y="-100" speed="24" range="310">
+        <mogler type="HORIZONTAL" x="76" y="316" speed="24" range="140"/>
+        <block color="RED" type="HORIZONTAL" x= "24" y="316" width="16" height="72" speed="24" range="140"/>
+        <block color="RED" type="HORIZONTAL" x="128" y="316" width="16" height="72" speed="24" range="140"/>
+      </block>
+    </area>
+    
+    <!-- STAGE Ex8 ？？？？ -->
+    <area>
+      <ebifly x="320" y="216"/>
+      <block type="HORIZONTAL" x="0" y="1000" speed="1.5" range="640" init="160">
+        <block type="CIRCLE" speed="0.8" range="280" init="16">
+          <mogler type="CIRCLE" speed="-0.8" range="320" init="-16"/>
+        </block>
+      </block>
+    </area>
+    
+  </stage>
+  
+</fliflixx>
