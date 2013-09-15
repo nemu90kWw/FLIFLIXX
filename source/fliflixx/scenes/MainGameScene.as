@@ -15,8 +15,9 @@ package fliflixx.scenes
 		private var func_map:CMap;
 		private var func_stage:CStageGenerator;
 		private var nomiss:Boolean;
-		private var statetext:String = "";
+		//private var statetext:String = "";
 		public var ebifly:CEbifly;
+		public var message:CMessage;
 		
 		public var gamedata:GameData = new GameData();
 		
@@ -69,6 +70,8 @@ package fliflixx.scenes
 		// --------------------------------//
 		public function game_retry():void
 		{
+			message.vanish();
+			
 			switch(gamedata.mode) {
 			case "SEQUENTIAL": func_map.retry(); break;
 			case "SINGLE": func_stage.createStage(gamedata.stage, gamedata.area); break;
@@ -85,7 +88,6 @@ package fliflixx.scenes
 		{
 			if(gamedata.mode == "SINGLE") {gamedata.time = 0;}
 			
-			statetext = "";
 			if(count > 5)
 			{
 				//開始
@@ -156,18 +158,18 @@ package fliflixx.scenes
 				
 				if(nomiss == true && gamedata.mode == "SEQUENTIAL")
 				{
-					statetext = " STAGE CLEAR\nnomiss! +5sec";
+					message = createObject(new CMessage(CMessage.NOMISSCLEAR));
 					gamedata.time += 5;
 				}
 				else {
-					statetext = "STAGE CLEAR";
+					createObject(new CMessage(CMessage.CLEAR));
 				}
 				
 				if(gamedata.mode == "SINGLE")
 				{
 					if(PlayData.records.isBest(gamedata.stage, gamedata.area, gamedata.time))
 					{
-						statetext = " STAGE CLEAR\n\nBEST RECORD!!"
+						message = createObject(new CMessage(CMessage.BESTRECORD));
 						PlayData.records.entry(gamedata.stage, gamedata.area, gamedata.time);
 						PlayData.records.saveData();
 					}
@@ -192,6 +194,8 @@ package fliflixx.scenes
 		// --------------------------------//
 		public function game_nextstage():void
 		{
+			message.vanish();
+			
 			//次ワールドへ
 			if(gamedata.area == 8)
 			{
@@ -224,7 +228,7 @@ package fliflixx.scenes
 				{
 					nomiss = false;
 					
-					statetext = "MISS! -5sec";
+					message = createObject(new CMessage(CMessage.MISS));
 					gamedata.time -= 5;
 					
 					if(gamedata.time < 0) {
@@ -233,21 +237,23 @@ package fliflixx.scenes
 				}
 				
 				if(gamedata.time < 1) {
-					if(count == 48) {
+					if (count == 48)
+					{
+						message.vanish();
 						changeAction("game_over");
 					}
 				}
 				else {
-					if(Mouse.press) {
+					if (Mouse.press) {
 						changeAction_fadeout("game_retry");
 					}
 				}
 				break;
 			case "SINGLE":
 				if(count == 0) {
-					statetext = "MISS!";
+					message = createObject(new CMessage(CMessage.MISS));
 				}
-				if(Mouse.press) {
+				if (Mouse.press) {
 					changeAction_fadeout("game_retry");
 				}
 				break;
@@ -264,7 +270,7 @@ package fliflixx.scenes
 			if(count == 0)
 			{
 				func_bgm.play("BGM_GAMEOVER");
-				statetext = "GAME OVER";
+				message = createObject(new CMessage(CMessage.GAMEOVER));
 				
 				//動きを止める
 				var mogler:* = func_obj.searchPriority("PRIO_ENEMY");
@@ -283,7 +289,8 @@ package fliflixx.scenes
 				}
 			}
 			
-			if(count == 270) {
+			if (count == 270)
+			{
 				changeAction_fadeout("game_entry");
 			}
 			
@@ -295,12 +302,14 @@ package fliflixx.scenes
 		// --------------------------------//
 		public function game_entry():void
 		{
+			message.vanish();
 			changeScene(new RankingScene(gamedata));
 			return;
 		}
 		
 		public function game_returntotitle():void
 		{
+			message.vanish();
 			changeScene(new TitleScene());
 			return;
 		}
@@ -311,7 +320,6 @@ package fliflixx.scenes
 		override public function draw():void
 		{
 			func_obj.draw();
-			func_text.draw("16px", screen.buffer, statetext, 320-func_text.getTextWidth("16px", statetext)/2, 200);
 		}
 	}
 }
