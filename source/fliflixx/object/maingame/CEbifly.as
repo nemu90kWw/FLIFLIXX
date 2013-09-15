@@ -1,7 +1,8 @@
 
 package fliflixx.object.maingame
 {
-	import fliflixx.object.maingame.CGameObject;
+	import flash.display.MovieClip;
+	import fliflixx.asset.EbiflyAsset;
 	import common.Mouse;
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
@@ -11,6 +12,11 @@ package fliflixx.object.maingame
 	
 	public class CEbifly extends CGameObject
 	{
+		private static var asset:MovieClip;
+		
+		private var xscale:Number = 100;
+		private var yscale:Number = 100;
+		
 		private var vx:Number = 0;
 		private var vy:Number = 0;
 		private var angle:Number = 0;
@@ -35,139 +41,9 @@ package fliflixx.object.maingame
 		
 		public static function standbyGraphics():void
 		{
-			var sprite:Array = new Array();
+			asset = new EbiflyAsset();
+			asset.stop();
 			
-			for(var i:int = 0; i < 5; i++)
-			{
-				sprite[i] = new Sprite();
-			}
-			
-			//後ろ
-			sprite[0].graphics.beginFill(0xF83038);
-			sprite[0].graphics.moveTo(-6.3, -2.0);
-			sprite[0].graphics.lineTo(-13.2, 11.8);
-			sprite[0].graphics.lineTo(-4, 3.8);
-			sprite[0].graphics.endFill();
-			sprite[0].graphics.beginFill(0xF83038);
-			sprite[0].graphics.moveTo(6.3, -2.0);
-			sprite[0].graphics.lineTo(13.2, 11.8);
-			sprite[0].graphics.lineTo(4, 3.8);
-			sprite[0].graphics.endFill();
-			
-			sprite[1].graphics.beginFill(0xF83038);
-			sprite[1].graphics.moveTo(-8.5, -2.0);
-			sprite[1].graphics.lineTo(-15, 11);
-			sprite[1].graphics.lineTo(-5.7, 3.5);
-			sprite[1].graphics.endFill();
-			sprite[1].graphics.beginFill(0xE02030);
-			sprite[1].graphics.moveTo(4.8, -2.0);
-			sprite[1].graphics.lineTo(10.7, 12);
-			sprite[1].graphics.lineTo(2.6, 4.0);
-			sprite[1].graphics.endFill();
-			
-			sprite[3].graphics.beginFill(0xE02030);
-			sprite[3].graphics.moveTo(1.8, -2.0);
-			sprite[3].graphics.lineTo(4.7, 13.2);
-			sprite[3].graphics.lineTo(0, 4.5);
-			sprite[3].graphics.endFill();
-			
-			sprite[4].graphics.beginFill(0xE02030);
-			sprite[4].graphics.moveTo(0, 2);
-			sprite[4].graphics.lineTo(-1.1, 4.4);
-			sprite[4].graphics.lineTo(0, 13.2);
-			sprite[4].graphics.lineTo(1.1, 4.4);
-			sprite[4].graphics.endFill();
-			
-			//本体
-			for(var i:int = 0; i < 5; i++)
-			{
-				sprite[i].graphics.beginFill(0xF8FF80);
-				sprite[i].graphics.moveTo(0, -12);
-				sprite[i].graphics.lineTo(5, -8.4);
-				sprite[i].graphics.lineTo(6, 1.9);
-				sprite[i].graphics.lineTo(4.2, 5.2);
-				sprite[i].graphics.lineTo(1.4, 6.5);
-				sprite[i].graphics.lineTo(-1.4, 6.5);
-				sprite[i].graphics.lineTo(-4.2, 5.2);
-				sprite[i].graphics.lineTo(-6, 1.9);
-				sprite[i].graphics.lineTo(-5, -8.4);
-				sprite[i].graphics.endFill();
-			}
-			
-			//前側
-			sprite[0].graphics.beginFill(0xFF4840);
-			sprite[0].graphics.moveTo(0, 1.5);
-			sprite[0].graphics.lineTo(-1.5, 4.4);
-			sprite[0].graphics.lineTo(0, 13.2);
-			sprite[0].graphics.lineTo(1.5, 4.4);
-			sprite[0].graphics.endFill();
-			
-			sprite[1].graphics.beginFill(0xFF4840);
-			sprite[1].graphics.moveTo(1.8, -1.4);
-			sprite[1].graphics.lineTo(-0.3, 4.5);
-			sprite[1].graphics.lineTo(4.7, 13.2);
-			sprite[1].graphics.endFill();
-			
-			sprite[2].graphics.beginFill(0xFF4840);
-			sprite[2].graphics.moveTo(-9.3, -2.1);
-			sprite[2].graphics.lineTo(-16.2, 10.6);
-			sprite[2].graphics.lineTo(-6.5, 3.1);
-			sprite[2].graphics.endFill();
-			sprite[2].graphics.beginFill(0xFF4840);
-			sprite[2].graphics.moveTo(3.1, -1.4);
-			sprite[2].graphics.lineTo(8.4, 12.9);
-			sprite[2].graphics.lineTo(1.1, 4.5);
-			sprite[2].graphics.endFill();
-			
-			sprite[3].graphics.beginFill(0xFF4840);
-			sprite[3].graphics.moveTo(-8.5, -2);
-			sprite[3].graphics.lineTo(-15.7, 10.9);
-			sprite[3].graphics.lineTo(-5.7, 3.5);
-			sprite[3].graphics.endFill();
-			sprite[3].graphics.beginFill(0xFF4840);
-			sprite[3].graphics.moveTo(4.8, -1.7);
-			sprite[3].graphics.lineTo(10.7, 12);
-			sprite[3].graphics.lineTo(2.6, 4);
-			sprite[3].graphics.endFill();
-			
-			sprite[4].graphics.beginFill(0xFF4840);
-			sprite[4].graphics.moveTo(-6.3, -2.0);
-			sprite[4].graphics.lineTo(-13.8, 11.8);
-			sprite[4].graphics.lineTo(-4, 3.8);
-			sprite[4].graphics.endFill();
-			sprite[4].graphics.beginFill(0xFF4840);
-			sprite[4].graphics.moveTo(6.3, -2.0);
-			sprite[4].graphics.lineTo(13.8, 11.8);
-			sprite[4].graphics.lineTo(4, 3.8);
-			sprite[4].graphics.endFill();
-			
-			cell = new Object();
-			var matrix:Matrix = new Matrix();
-			for(var j:int = 0; j < 256; j++)
-			{
-				cell[j] = new Array();
-				
-				for(var i:int = 0; i < 8; i++)
-				{
-					cell[j][i] = new BitmapData(32, 32, true, 0);
-					
-					matrix.identity();
-					
-					if(i < 5)
-					{
-						matrix.rotate(Math.PI/128*j);
-						matrix.translate(16, 16);
-						cell[j][i].draw(sprite[i], matrix);
-					}
-					else
-					{
-						matrix.scale(-1, 1);
-						matrix.rotate(Math.PI/128*j);
-						matrix.translate(16, 16);
-						cell[j][i].draw(sprite[8-i], matrix);
-					}
-				}
-			}
 			return;
 		}
 		
@@ -247,19 +123,16 @@ package fliflixx.object.maingame
 				if(Mouse.down)
 				{
 					playSE("SE_SMOKE");
-					for(var i:int = 0; i < 10; i++)
-					{
-						createObject(
-							new CSmoke(
-								angle-32+Math.random()*64,
-								-16-4+Math.random()*8,
-								vx/1.5,
-								vy/1.5
-							),
-							MathEx.getVectorX(angle, -10)-3+Math.random()*6,
-							MathEx.getVectorY(angle, -10)-3+Math.random()*6
-						);
-					}
+					createObject(
+						new CSmoke(
+							angle - 8 + Math.random() * 16,
+							-10 - 2 + Math.random() * 4,
+							vx / 2,
+							vy / 2
+						),
+						Math.random() * 8 - 4,
+						Math.random() * 8 - 4
+					);
 				}
 			}
 			
@@ -267,6 +140,13 @@ package fliflixx.object.maingame
 			x += vx/3;
 			y += vy/3;
 			
+			//拡縮
+			if(count % 3 == 0)
+			{
+				xscale = (xscale * 3 + (110-getDistance(x+vx, y+vy)*2) + 100) / 5;
+				yscale = (yscale * 3 + ( 80+getDistance(x+vx, y+vy)*4) + 100) / 5;
+			}
+	
 			//敵が存在しない場合は判定しない
 			if(getEnemyCount() == 0) {
 				return;
@@ -308,13 +188,18 @@ package fliflixx.object.maingame
 		
 		override public function draw(screen:Screen):void
 		{
-			var bmp:BitmapData = cell[Math.floor((angle+256+0.5)%256)][currentframe];
-			screen.buffer.copyPixels(bmp, bmp.rect, new Point(x-16, y-16));
+			var matrix:Matrix = new Matrix();
+			matrix.scale(xscale / 100, yscale / 100);
+			matrix.rotate(Math.PI / 128 * angle);
+			matrix.translate(x, y);
+			
+			asset.gotoAndStop(currentframe + 1);
+			screen.buffer.draw(asset, matrix);
 			
 			anime_interval--;
 			if(anime_interval <= 0)
 			{
-				currentframe = (currentframe+1)%8;
+				currentframe = (currentframe + 1) % 8;
 				anime_interval = 3;
 			}
 		}
@@ -326,12 +211,7 @@ package fliflixx.object.maingame
 		{
 			playSE("SE_EXPLOSION");
 			
-			for(var i:int; i < 64; i++)
-			{
-				createObject(new CSmoke(256/64*i, 12, 0, 0), MathEx.getVectorX(256/64*i, 30), MathEx.getVectorY(256/64*i, 30));
-				createObject(new CSmoke(256/64*i, 8-(i%2)*2, 0, 0), MathEx.getVectorX(256/64*i, 20), MathEx.getVectorY(256/64*i, 20));
-				createObject(new CSmoke(Math.random()*256, 4, 0, 0), MathEx.getVectorX(Math.random()*256, 100), MathEx.getVectorY(Math.random()*256, 100));
-			}
+			createObject(new CExplosion(), 0, 0);
 			vanish();
 			return;
 		}

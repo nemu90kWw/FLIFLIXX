@@ -16,7 +16,10 @@
   <compiler>
     <incremental>true</incremental>
     <accessible>true</accessible>
-    <library-path></library-path>
+	
+    <library-path append="true">
+		<path-element>libs</path-element>
+	</library-path>
     
     <warn-duplicate-variable-def>false</warn-duplicate-variable-def>
     <warn-deprecated-event-handler-error>true</warn-deprecated-event-handler-error>
@@ -27,8 +30,8 @@
   <metadata>
     <title>FLIFLIXX for ActionScript3.0</title>
     <description></description>
-    <publisher>◆nemu90kWw.</publisher>
-    <creator>◆nemu90kWw.</creator>
+    <publisher>90k-games</publisher>
+    <creator>ねむ◆nemu90kWw.</creator>
     <language>ja-JP</language>
   </metadata>
   

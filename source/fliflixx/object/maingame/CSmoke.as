@@ -1,5 +1,8 @@
 package fliflixx.object.maingame
 {
+	import flash.display.MovieClip;
+	import flash.geom.Matrix;
+	import fliflixx.asset.SmokeAsset;
 	import fliflixx.object.maingame.CGameObject;
 	import common.Screen;
 	import flash.geom.Rectangle;
@@ -7,13 +10,15 @@ package fliflixx.object.maingame
 	
 	public class CSmoke extends CGameObject
 	{
+		private var asset:MovieClip;
+		
 		private var angle:Number = 0;
 		private var speed:Number = 0;
 		
 		private var ebifly_vx:Number = 0;
 		private var ebifly_vy:Number = 0;
 		
-		private var size:Number = 30;
+		private var frame:int = 0;
 		
 		// --------------------------------//
 		// 初期化
@@ -29,6 +34,9 @@ package fliflixx.object.maingame
 		override public function initialize():void
 		{
 			registerObject("DEPTH_EFFECT", "PRIO_EFFECT");
+			
+			asset = new SmokeAsset();
+			asset.stop();
 			
 			changeAction("act_main");
 			return;
@@ -56,20 +64,30 @@ package fliflixx.object.maingame
 				//障害物に当たったら速度を落とす
 				if(hit == true)
 				{
-					speed /= 2;
-					ebifly_vx /= 1.25;
-					ebifly_vy /= 1.25;
+					speed /= 2.5;
+					ebifly_vx /= 2;
+					ebifly_vy /= 2;
 				}
 				else
 				{
-					speed /= 1.05;
-					ebifly_vx /= 1.05;
-					ebifly_vy /= 1.05;
+					speed /= 1.1;
+					ebifly_vx /= 1.2;
+					ebifly_vy /= 1.2;
 				}
 			}
-			size -= 0.3;
 			
-			if(size <= 1) {vanish()}
+			if (count % 3 == 0)
+			{
+				frame++;
+			
+				if (frame == asset.totalFrames + 1) {
+					vanish();
+				}
+			}
+			
+			asset.x = x;
+			asset.y = y;
+			asset.gotoAndStop(frame);
 		}
 		
 		// --------------------------------//
@@ -77,7 +95,9 @@ package fliflixx.object.maingame
 		// --------------------------------//
 		override public function draw(screen:Screen):void
 		{
-			screen.buffer.fillRect(new Rectangle(x-size/2, y-size/2, size, size), 0xFFFFFF);
+			//screen.buffer.fillRect(new Rectangle(x-size/2, y-size/2, size, size), 0xFFFFFF);
+			
+			screen.buffer.draw(asset, asset.transform.matrix);
 			return;
 		}
 	}
