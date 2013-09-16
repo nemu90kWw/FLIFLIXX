@@ -51,9 +51,9 @@ package fliflixx.scenes
 				
 				//メニュー作成
 				menu = createObject(new CMenu());
-				menu.addItem("16px", "NEW GAME", 320, 230);
-				menu.addItem("16px", "STAGE SELECT", 320, 255);
-				menu.addItem("16px", "RANKING", 320, 280);
+				menu.addItem("16px", "GAME START", 320, 230);
+				menu.addItem("16px", "PRACTICE", 320, 255);
+				menu.addItem("16px", "LOCAL RANKING", 320, 280);
 				
 				radio = createObject(new CRadioGroup());
 				radio.addItem("16px", "ORIGINAL", 258, 350);
@@ -66,9 +66,9 @@ package fliflixx.scenes
 			if(menu.isDecided() == true)
 			{
 				switch(menu.getSelectedItem().label) {
-				case "NEW GAME": changeAction_fadeout("act_gotomaingame"); break;
-				case "STAGE SELECT": changeAction("act_stageselect"); break;
-				case "RANKING": changeAction_fadeout("act_gotoranking"); break;
+				case "GAME START": changeAction_fadeout("act_gotomaingame"); break;
+				case "PRACTICE": changeAction("act_stageselect"); break;
+				case "LOCAL RANKING": changeAction_fadeout("act_gotoranking"); break;
 				}
 			}
 			
@@ -89,6 +89,8 @@ package fliflixx.scenes
 		{
 			if(count == 0)
 			{
+				var progress:int = 0;
+				
 				bmp.fillRect(bmp.rect, 0);
 				bmp.copyPixels(bmp_logo, bmp_logo.rect, new Point(16, 80));
 				
@@ -96,11 +98,17 @@ package fliflixx.scenes
 				menu = createObject(new CMenu());
 				menu.addItem("16px", "RETURN TO MAINMENU", 320, 376);
 				
-				for(var i:int = 1; i <= 5; i++) {
-					for(var j:int = 1; j <= 8; j++)
+				for (var i:int = 1; i <= 5; i++)
+				{
+					for (var j:int = 1; j <= 8; j++)
 					{
-						if(i != 5) {menu.addItem("16px", i.toString()+"-"+j.toString(), -4+j*72, 156+i*36);}
-						else {menu.addItem("16px", "Ex"+j.toString(), -4+j*72, 156+i*36);}
+						var item:CButton;
+						if (i != 5) {
+							item = menu.addItem("16px", i.toString() + "-" + j.toString(), -4 + j * 72, 156 + i * 36);
+						}
+						else {
+							item = menu.addItem("16px", "Ex" + j.toString(), -4 + j * 72, 156 + i * 36);
+						}
 						
 						var time:Number = records.data.record[i%5][j];
 						var sec:String = MathEx.addZero(Math.floor(time), 2);
