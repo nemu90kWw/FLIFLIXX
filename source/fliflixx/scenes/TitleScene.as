@@ -44,7 +44,7 @@ package fliflixx.scenes
 			{
 				bmp.fillRect(bmp.rect, 0);
 				bmp.copyPixels(bmp_logo, bmp_logo.rect, new Point(16, 80));
-				func_text.draw("16px", bmp, "for AS3", 400, 172);
+				//func_text.draw("16px", bmp, "for AS3", 400, 172);
 				func_text.draw("16px", bmp, "BGM-TYPE", 320-(8*16/2), 320);
 				func_text.draw("8px", bmp, "FLIXX-like visual & FLIXX-like music", 320-(36*8/2), 60);
 				func_text.draw("16px", bmp, "Programmed by nemu90kWw.", 320-(24*16/2), 376);
