@@ -8,13 +8,13 @@ package fliflixx.scenes
 	import flash.geom.Point;
 	import fliflixx.object.common.CButton;
 	import fliflixx.object.common.CMenu;
-	import fliflixx.system.BestRecords;
+	import fliflixx.system.Records;
 	import fliflixx.object.common.CRadioGroup;
 	import fliflixx.system.PlayData;
 	
 	public class TitleScene extends SceneBase
 	{
-		private const records:BestRecords = PlayData.records;
+		private const records:Records = PlayData.records;
 		
 		private var bmp:BitmapData = new BitmapData(640, 400, true, 0);
 		private var bmp_logo:BitmapData = Database.getItem("BMP_TITLELOGO");
@@ -89,8 +89,6 @@ package fliflixx.scenes
 		{
 			if(count == 0)
 			{
-				var progress:int = 0;
-				
 				bmp.fillRect(bmp.rect, 0);
 				bmp.copyPixels(bmp_logo, bmp_logo.rect, new Point(16, 80));
 				
@@ -98,23 +96,28 @@ package fliflixx.scenes
 				menu = createObject(new CMenu());
 				menu.addItem("16px", "RETURN TO MAINMENU", 320, 376);
 				
-				for (var i:int = 1; i <= 5; i++)
+				for (var row:int = 1; row <= 5; row++)
 				{
-					for (var j:int = 1; j <= 8; j++)
+					for (var column:int = 1; column <= 8; column++)
 					{
-						var item:CButton;
-						if (i != 5) {
-							item = menu.addItem("16px", i.toString() + "-" + j.toString(), -4 + j * 72, 156 + i * 36);
-						}
-						else {
-							item = menu.addItem("16px", "Ex" + j.toString(), -4 + j * 72, 156 + i * 36);
+						if (records.data.progress < 32) {
+							if (records.data.progress < (8 * (row-1)) + column) {
+								return;
+							}
 						}
 						
-						var time:Number = records.data.record[i%5][j];
+						if (row != 5) {
+							menu.addItem("16px", row.toString() + "-" + column.toString(), -4 + column * 72, 156 + row * 36);
+						}
+						else {
+							menu.addItem("16px", "Ex" + column.toString(), -4 + column * 72, 156 + row * 36);
+						}
+						
+						var time:Number = records.data.record[row%5][column];
 						var sec:String = MathEx.addZero(Math.floor(time), 2);
 						var dn:String  = MathEx.addZero(Math.floor(time*100 % 100), 2);
 						
-						func_text.draw("8px", bmp, "rec"+sec+"."+dn, -36+j*72, 164+i*36);
+						func_text.draw("8px", bmp, "rec"+sec+"."+dn, -36+column*72, 164+row*36);
 					}
 				}
 			}

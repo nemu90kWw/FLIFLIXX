@@ -3,12 +3,12 @@ package fliflixx.system
 {
 	import common.LocalDataManager;
 	
-	public class BestRecords
+	public class Records
 	{
 		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_RECORD");
-		public var data:Array = new Array();
+		public var data:Object = new Object();
 		
-		public function BestRecords()
+		public function Records()
 		{
 			data.record = new Array();
 			
@@ -20,6 +20,7 @@ package fliflixx.system
 					func_ldm.setDefault("record"+i+"-"+j, 99.99);
 				}
 			}
+			func_ldm.setDefault("progress", 0);
 		}
 		
 		// --------------------------------//
@@ -35,6 +36,7 @@ package fliflixx.system
 				}
 			}
 			
+			data.progress = func_ldm.getDefault("progress");
 			return;
 		}
 		
@@ -49,6 +51,7 @@ package fliflixx.system
 				}
 			}
 			
+			func_ldm.saveData("progress", data.progress);
 			return;
 		}
 		
@@ -63,6 +66,7 @@ package fliflixx.system
 				}
 			}
 			
+			data.progress = func_ldm.loadData("progress");
 			return;
 		}
 		

@@ -5,6 +5,7 @@ package fliflixx.scenes
 	import common.Screen;
 	import fliflixx.scenes.SceneBase;
 	import fliflixx.system.Ranking;
+	import fliflixx.system.Records;
 	
 	import flash.display.BitmapData;
 	import flash.geom.Rectangle;
@@ -18,6 +19,7 @@ package fliflixx.scenes
 		private var gamedata:GameData;
 		private const RANKING_MAX:uint = 10;
 		private const ranking:Ranking = PlayData.ranking;
+		private const records:Records = PlayData.records;
 		private var table:String = "";
 		private var scorenum:Array = new Array();
 		private var rank:*;
@@ -46,6 +48,12 @@ package fliflixx.scenes
 			else
 			{
 				rank = ranking.isRankIn(gamedata.score);
+				
+				if (records.data.progress < (gamedata.stage - 1) * 8 + gamedata.area)
+				{
+					records.data.progress = (gamedata.stage - 1) * 8 + gamedata.area;
+					records.saveData();
+				}
 				
 				if(rank == false) {
 					changeAction("ranking_view");

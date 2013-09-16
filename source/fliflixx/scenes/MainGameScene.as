@@ -15,7 +15,6 @@ package fliflixx.scenes
 		private var func_map:CMap;
 		private var func_stage:CStageGenerator;
 		private var nomiss:Boolean;
-		//private var statetext:String = "";
 		public var ebifly:CEbifly;
 		public var message:CMessage;
 		
