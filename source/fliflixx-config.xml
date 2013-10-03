@@ -14,7 +14,6 @@
   </default-script-limits>
   
   <compiler>
-    <incremental>true</incremental>
     <accessible>true</accessible>
 	
     <library-path append="true">
@@ -22,18 +21,15 @@
 	</library-path>
     
     <warn-duplicate-variable-def>false</warn-duplicate-variable-def>
-    <warn-deprecated-event-handler-error>true</warn-deprecated-event-handler-error>
     <warn-deprecated-function-error>true</warn-deprecated-function-error>
     <warn-deprecated-property-error>true</warn-deprecated-property-error>
   </compiler>
   
   <metadata>
-    <title>FLIFLIXX for ActionScript3.0</title>
+    <title>FLIFLIXX</title>
     <description></description>
     <publisher>90k-games</publisher>
     <creator>ねむ◆nemu90kWw.</creator>
     <language>ja-JP</language>
   </metadata>
-  
-  <benchmark>true</benchmark>
 </flex-config>
