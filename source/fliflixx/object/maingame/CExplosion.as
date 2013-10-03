@@ -15,7 +15,7 @@ package fliflixx.object.maingame
 		private var frame:int = 0;
 		
 		// --------------------------------//
-		// ‰Šú‰»
+		// åˆæœŸåŒ–
 		// --------------------------------//
 		override public function initialize():void
 		{
@@ -29,7 +29,7 @@ package fliflixx.object.maingame
 		}
 
 		// --------------------------------//
-		// ƒƒCƒ“
+		// ãƒ¡ã‚¤ãƒ³
 		// --------------------------------//
 		public function act_main():void
 		{
@@ -48,7 +48,7 @@ package fliflixx.object.maingame
 		}
 		
 		// --------------------------------//
-		// •`‰æ
+		// æç”»
 		// --------------------------------//
 		override public function draw(screen:Screen):void
 		{
