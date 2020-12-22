@@ -25,6 +25,7 @@
 			{
 			case "SWF"    : return loadSWF(name, url);
 			case "BITMAP" : return loadBitmap(name, url);
+			case "BGM"    : return loadSound(name, url);
 			case "SOUND"  : return loadSound(name, url);
 			case "XML"    : return loadXML(name, url);
 			case "BINARY" : return loadBinary(name, url);

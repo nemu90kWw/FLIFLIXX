@@ -9,6 +9,7 @@ package common
 	import flash.display.PixelSnapping;
 	import flash.utils.getTimer;
 	import flash.ui.ContextMenu;
+	import fliflixx.system.Music;
 	
 	import flash.ui.ContextMenuItem;
 	import flash.events.ContextMenuEvent;
@@ -81,7 +82,6 @@ package common
 			mainloop();
 			screen.buffer.unlock();
 			
-			func_bgm.main();
 			func_se.main();
 		}
 	}

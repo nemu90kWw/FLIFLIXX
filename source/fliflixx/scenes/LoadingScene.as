@@ -12,6 +12,7 @@ package fliflixx.scenes
 	import flash.net.LocalConnection;
 	import flash.utils.describeType;
 	import flash.utils.getTimer;
+	import fliflixx.system.Music;
 	
 	public class LoadingScene extends SceneBase
 	{
@@ -49,6 +50,18 @@ package fliflixx.scenes
 				//読み込みテーブル
 				itemlist.push({type:"BITMAP", name:"BMP_TITLELOGO", url:"graphic/titlelogo.png"});
 				itemlist.push({type:"BITMAP", name:"BMP_MINILOGO", url:"graphic/minilogo.png"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE1", url:"bgm/ELMB_Stage1.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE2", url:"bgm/ELMB_Stage2.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE3", url:"bgm/ELMB_Stage3.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_ALLCLEAR", url:"bgm/ELMB_Clear.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_RANKING", url:"bgm/ELMB_Ranking.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_GAMEOVER", url:"bgm/ELMB_GameOver.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE1_FC", url:"bgm/NES_Stage1.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE2_FC", url:"bgm/NES_Stage2.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_STAGE3_FC", url:"bgm/NES_Stage3.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_ALLCLEAR_FC", url:"bgm/NES_Clear.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_RANKING_FC", url:"bgm/NES_Ranking.mp3"});
+				itemlist.push({type:"BGM", name:"BGM_GAMEOVER_FC", url:"bgm/NES_GameOver.mp3"});
 				itemlist.push({type:"SOUND", name:"SE_EXPLOSION", url:"se/sqbomb.mp3"});
 				itemlist.push({type:"SOUND", name:"SE_HIT", url:"se/fx4.mp3"});
 				itemlist.push({type:"SOUND", name:"SE_SMOKE", url:"se/sqsmoke.mp3"});
@@ -126,6 +139,20 @@ package fliflixx.scenes
 				//ロード完了
 				if(itemlist.length == 0)
 				{
+					//ループポイントの設定
+					Music.registerSound(Database.getItem("BGM_STAGE1"), "BGM_STAGE1", 91.5, -90.1);
+					Music.registerSound(Database.getItem("BGM_STAGE1_FC"), "BGM_STAGE1_FC", 94.2, -93.3);
+					Music.registerSound(Database.getItem("BGM_STAGE2"), "BGM_STAGE2", 19.5, -18.5);
+					Music.registerSound(Database.getItem("BGM_STAGE2_FC"), "BGM_STAGE2_FC", 19.5, -19.2);
+					Music.registerSound(Database.getItem("BGM_STAGE3"), "BGM_STAGE3", 38.3, -37.1);
+					Music.registerSound(Database.getItem("BGM_STAGE3_FC"), "BGM_STAGE3_FC", 39.2, -38.4);
+					Music.registerSound(Database.getItem("BGM_GAMEOVER"), "BGM_GAMEOVER", Infinity, 0);
+					Music.registerSound(Database.getItem("BGM_GAMEOVER_FC"), "BGM_GAMEOVER_FC", Infinity, 0);
+					Music.registerSound(Database.getItem("BGM_RANKING"), "BGM_RANKING", 37.6, -37);
+					Music.registerSound(Database.getItem("BGM_RANKING_FC"), "BGM_RANKING_FC", 39.2, -38.4);
+					Music.registerSound(Database.getItem("BGM_ALLCLEAR"), "BGM_ALLCLEAR", 39, -38.4);
+					Music.registerSound(Database.getItem("BGM_ALLCLEAR_FC"), "BGM_ALLCLEAR_FC", Infinity, 0);
+					
 					systext = "WAIT...";
 					changeAction("act_standbygrphics");
 					return;
