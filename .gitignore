@@ -11,7 +11,3 @@ bin-debug/
 bin-release/
 
 obj/
-
-bgm.fla
-bgm_lc.as
-music.as
