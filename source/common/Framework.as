@@ -42,24 +42,8 @@ package common
 			//画面
 			screen = new Screen(root, new BitmapData(width, height, false, 0x000000));
 			
-			root.contextMenu = new ContextMenu();
-			root.contextMenu.hideBuiltInItems();
-			
-			if(AppInfo.isVersion(9,0,60))
-			{
-				var item:ContextMenuItem = new ContextMenuItem("フルスクリーン");
-				item.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, fullScreen);
-				root.contextMenu.customItems.push(item);
-			}
-			
 			root.addEventListener(Event.ENTER_FRAME, onEnterFrame);
 			return;
-		}
-		
-		private function fullScreen(event:ContextMenuEvent):void
-		{
-			stage.fullScreenSourceRect = screen.buffer.rect;
-			stage.displayState = "fullScreen";
 		}
 		
 		// --------------------------------//

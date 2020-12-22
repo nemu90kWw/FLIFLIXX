@@ -1,0 +1,17 @@
+
+.project
+.settings
+
+bat/Password.bat
+*.p12
+
+air/
+bin/
+bin-debug/
+bin-release/
+
+obj/
+
+bgm.fla
+bgm_lc.as
+music.as
