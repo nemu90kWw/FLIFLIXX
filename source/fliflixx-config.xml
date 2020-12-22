@@ -14,8 +14,6 @@
   </default-script-limits>
   
   <compiler>
-    <accessible>true</accessible>
-	
     <library-path append="true">
 		<path-element>libs</path-element>
 	</library-path>
