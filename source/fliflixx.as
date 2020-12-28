@@ -1,7 +1,10 @@
 package
 {
+	import flash.desktop.NativeApplication;
+	import flash.display.Screen;
 	import flash.display.Sprite;
 	import common.Framework;
+	import flash.events.InvokeEvent;
 	import fliflixx.scenes.SceneController;
 	import fliflixx.system.ObjectManager;
 	import fliflixx.scenes.LoadingScene;
@@ -13,6 +16,16 @@ package
 		
 		public function fliflixx()
 		{
+			NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke);
+		}
+		
+		private function onInvoke(e:InvokeEvent):void
+		{
+			// センタリングして表示
+			stage.nativeWindow.x = (Screen.mainScreen.visibleBounds.width - stage.nativeWindow.width) / 2;
+			stage.nativeWindow.y = (Screen.mainScreen.visibleBounds.height - stage.nativeWindow.height) / 2;
+			stage.nativeWindow.visible = true;
+			
 			framework = new Framework(this, main, 640, 400);
 			
 			//先
