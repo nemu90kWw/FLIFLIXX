@@ -6,6 +6,7 @@ package
 	import common.Framework;
 	import flash.events.InvokeEvent;
 	import fliflixx.scenes.SceneController;
+	import fliflixx.system.Menu;
 	import fliflixx.system.ObjectManager;
 	import fliflixx.scenes.LoadingScene;
 	
@@ -21,6 +22,11 @@ package
 		
 		private function onInvoke(e:InvokeEvent):void
 		{
+			new Menu(stage.nativeWindow, this);
+			
+			stage.stageWidth = 640;
+			stage.stageHeight = 400;
+			
 			// センタリングして表示
 			stage.nativeWindow.x = (Screen.mainScreen.visibleBounds.width - stage.nativeWindow.width) / 2;
 			stage.nativeWindow.y = (Screen.mainScreen.visibleBounds.height - stage.nativeWindow.height) / 2;
