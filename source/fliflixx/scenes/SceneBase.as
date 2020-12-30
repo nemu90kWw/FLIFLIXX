@@ -4,6 +4,7 @@ package fliflixx.scenes
 	import common.Screen;
 	import fliflixx.scenes.SceneController;
 	import common.Task;
+	import fliflixx.system.GameData;
 	import fliflixx.system.ObjectManager;
 	import fliflixx.object.CObject;
 	
@@ -15,6 +16,8 @@ package fliflixx.scenes
 		public static var sc:SceneController;
 		
 		public var func_obj:ObjectManager = new ObjectManager(screen);
+		
+		public function get gamedata():GameData { return null; }
 		
 		public function act_fadeout():void
 		{

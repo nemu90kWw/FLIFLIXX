@@ -18,7 +18,10 @@ package fliflixx.scenes
 		public var ebifly:CEbifly;
 		public var message:CMessage;
 		
-		public var gamedata:GameData = new GameData();
+		private var _gamedata:GameData = new GameData();
+		override public function get gamedata():GameData {
+			return _gamedata;
+		}
 		
 		// --------------------------------//
 		// 初期化

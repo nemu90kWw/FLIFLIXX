@@ -2,13 +2,14 @@
 {
 	import flash.display.BitmapData;
 	import flash.geom.Point;
+	import fliflixx.scenes.SceneBase;
 	
 	import common.Task;
 	import common.Screen;
 	
 	public class CObject extends Task
 	{
-		public var scene:*;
+		public var scene:SceneBase;
 		public var bmp:BitmapData;
 		public var deleteflag:Boolean = false;
 		
