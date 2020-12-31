@@ -1,7 +1,7 @@
 
 package fliflixx.scenes
 {
-	import common.Screen;
+	import common.Surface;
 	import fliflixx.scenes.SceneController;
 	import common.Task;
 	import fliflixx.system.GameData;
@@ -12,7 +12,7 @@ package fliflixx.scenes
 	{
 		private var fadeout_nextaction:String;
 		
-		public static var screen:Screen;
+		public static var screen:Surface;
 		public static var sc:SceneController;
 		
 		public var func_obj:ObjectManager = new ObjectManager(screen);

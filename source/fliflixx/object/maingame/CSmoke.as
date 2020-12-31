@@ -4,7 +4,7 @@ package fliflixx.object.maingame
 	import flash.geom.Matrix;
 	import fliflixx.asset.SmokeAsset;
 	import fliflixx.object.maingame.CGameObject;
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Rectangle;
 	import fliflixx.object.maingame.CBlock;
 	
@@ -93,7 +93,7 @@ package fliflixx.object.maingame
 		// --------------------------------//
 		// 描画
 		// --------------------------------//
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			//screen.buffer.fillRect(new Rectangle(x-size/2, y-size/2, size, size), 0xFFFFFF);
 			

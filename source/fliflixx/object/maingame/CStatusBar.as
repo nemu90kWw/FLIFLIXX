@@ -4,7 +4,7 @@ package fliflixx.object.maingame
 	import fliflixx.object.maingame.CGameObject;
 	import flash.display.BitmapData;
 	import flash.geom.Rectangle;
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Point;
 	import fliflixx.system.Database;
 	
@@ -20,7 +20,7 @@ package fliflixx.object.maingame
 			return;
 		}
 		
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			bmp.fillRect(new Rectangle(0, 0, 640, 32), 0x000000);
 			

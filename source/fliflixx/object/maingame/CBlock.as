@@ -1,6 +1,6 @@
 package fliflixx.object.maingame
 {
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Rectangle;
 	
 	public class CBlock extends CGameObject
@@ -159,7 +159,7 @@ package fliflixx.object.maingame
 		// --------------------------------//
 		// 描画
 		// --------------------------------//
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			screen.buffer.fillRect(new Rectangle(int(getX()-width/2),   int(getY()-height/2), width+1, height+1), color_light);
 			screen.buffer.fillRect(new Rectangle(int(getX()-width/2)+1, int(getY()-height/2)+1, width, height), color_shadow);
@@ -169,10 +169,10 @@ package fliflixx.object.maingame
 	}
 }
 
-import common.Screen;
+import common.Surface;
 import flash.geom.Rectangle;
 import fliflixx.object.maingame.CGameObject;
-import common.Screen;
+import common.Surface;
 
 class CBlockErase extends CGameObject
 {
@@ -216,7 +216,7 @@ class CBlockErase extends CGameObject
 	// --------------------------------//
 	// 描画
 	// --------------------------------//
-	override public function draw(screen:Screen):void
+	override public function draw(screen:Surface):void
 	{
 		screen.buffer.fillRect(new Rectangle(getX()-width/2, getY()-height/2, width, height), 0xFFFFFF);
 		return;

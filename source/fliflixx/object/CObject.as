@@ -5,7 +5,7 @@
 	import fliflixx.scenes.SceneBase;
 	
 	import common.Task;
-	import common.Screen;
+	import common.Surface;
 	
 	public class CObject extends Task
 	{
@@ -150,7 +150,7 @@
 			return;
 		}
 		
-		public function draw(screen:Screen):void
+		public function draw(screen:Surface):void
 		{
 			if(visible == false) {return;}
 			if(bmp == null) {return;}

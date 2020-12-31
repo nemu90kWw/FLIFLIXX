@@ -10,7 +10,7 @@ package fliflixx.object.maingame
 	import fliflixx.asset.StageClearNoMissMessageAsset;
 	import fliflixx.asset.StageCoearMessageAsset;
 	import fliflixx.object.maingame.CGameObject;
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Rectangle;
 	import fliflixx.object.maingame.CBlock;
 	
@@ -107,7 +107,7 @@ package fliflixx.object.maingame
 		// --------------------------------//
 		// 描画
 		// --------------------------------//
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			screen.buffer.draw(asset, asset.transform.matrix);
 			return;

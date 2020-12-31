@@ -7,12 +7,12 @@ package common
 	import flash.geom.Rectangle;
 	import flash.display.Shape;
 	
-	public class Screen
+	public class Surface
 	{
 		public var buffer:BitmapData;
 		private var dispobj:Shape;
 		
-		public function Screen(target:Sprite, bmp:BitmapData)
+		public function Surface(target:Sprite, bmp:BitmapData)
 		{
 			dispobj = new Shape();
 			buffer  = bmp;

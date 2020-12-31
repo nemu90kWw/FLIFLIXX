@@ -2,16 +2,16 @@
 package fliflixx.scenes
 {
 	import flash.geom.Transform;
-	import common.Screen;
+	import common.Surface;
 	import fliflixx.object.CObject;
 	
 	public class SceneController
 	{
 		private var currentscene:SceneBase 
-		private var screen:Screen;
+		private var screen:Surface;
 		private var scenestack:Array = new Array();
 		
-		public function SceneController(screen:Screen)
+		public function SceneController(screen:Surface)
 		{
 			this.screen = screen;
 			SceneBase.screen = screen;

@@ -7,7 +7,7 @@ package fliflixx.object.maingame
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.geom.Matrix;
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Point;
 	
 	public class CEbifly extends CGameObject
@@ -186,7 +186,7 @@ package fliflixx.object.maingame
 			return;
 		}
 		
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			var matrix:Matrix = new Matrix();
 			matrix.scale(xscale / 100, yscale / 100);

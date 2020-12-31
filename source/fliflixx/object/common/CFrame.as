@@ -4,7 +4,7 @@ package fliflixx.object.common
 	import fliflixx.object.CObject;
 	import flash.display.BitmapData;
 	import flash.geom.Rectangle;
-	import common.Screen;
+	import common.Surface;
 	import flash.geom.Point;
 	import fliflixx.system.Database;
 	
@@ -54,7 +54,7 @@ package fliflixx.object.common
 			return;
 		}
 		
-		override public function draw(screen:Screen):void
+		override public function draw(screen:Surface):void
 		{
 			screen.buffer.copyPixels(bmp, bmp.rect, new Point(0, 32));
 			return;

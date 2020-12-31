@@ -211,7 +211,7 @@ package fliflixx.object.maingame
 	}
 }
 
-import common.Screen;
+import common.Surface;
 import flash.display.Sprite;
 import flash.geom.Matrix;
 import fliflixx.object.maingame.CGameObject;

@@ -7,7 +7,7 @@ package fliflixx.system
 	// 
 	// ----------------------------------------------------------------//
 
-	import common.Screen;
+	import common.Surface;
 	import fliflixx.object.CObject;
 	
 	public class ObjectManager
@@ -18,12 +18,12 @@ package fliflixx.system
 		private var objlist:Object = new Object();
 		private var grplist:Object = new Object();
 		
-		private var screen:Screen;
+		private var screen:Surface;
 		
 		// --------------------------------//
 		// 初期化
 		// --------------------------------//
-		public function ObjectManager(scr:Screen)
+		public function ObjectManager(scr:Surface)
 		{
 			screen = scr;
 			

@@ -2,7 +2,7 @@
 package fliflixx.scenes
 {
 	import flash.display.Sprite;
-	import common.Screen;
+	import common.Surface;
 	import flash.display.BitmapData;
 	import flash.geom.Matrix;
 	import flash.geom.Point;

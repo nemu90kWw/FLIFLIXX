@@ -2,7 +2,7 @@
 package fliflixx.scenes
 {
 	import common.Mouse;
-	import common.Screen;
+	import common.Surface;
 	import fliflixx.scenes.maingame.*;
 	
 	import fliflixx.object.common.CFrame;

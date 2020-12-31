@@ -17,7 +17,7 @@ package common
 	
 	public class Framework
 	{
-		public var screen:Screen;
+		public var screen:Surface;
 		
 		private var root:Sprite;
 		private var stage:Stage;
@@ -41,7 +41,7 @@ package common
 			Mouse.setListener(stage);
 			
 			//画面
-			screen = new Screen(root, new BitmapData(width, height, false, 0x000000));
+			screen = new Surface(root, new BitmapData(width, height, false, 0x000000));
 			
 			root.addEventListener(Event.ENTER_FRAME, onEnterFrame);
 			return;

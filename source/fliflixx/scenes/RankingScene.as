@@ -2,7 +2,7 @@
 package fliflixx.scenes
 {
 	import common.Mouse;
-	import common.Screen;
+	import common.Surface;
 	import fliflixx.scenes.SceneBase;
 	import fliflixx.system.Ranking;
 	import fliflixx.system.Records;
@@ -283,7 +283,7 @@ package fliflixx.scenes
 }
 
 import fliflixx.object.CObject;
-import common.Screen;
+import common.Surface;
 import flash.display.BitmapData;
 import flash.geom.Matrix;
 import flash.geom.Point;
@@ -298,7 +298,7 @@ class CCursor extends CObject
 		registerObject("DEPTH_FRAME", "PRIO_FRAME");
 	}
 	
-	override public function draw(screen:Screen):void
+	override public function draw(screen:Surface):void
 	{
 		if(visible == false) {return;}
 		
