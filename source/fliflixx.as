@@ -1,14 +1,18 @@
 package
 {
+	import common.Framework;
 	import flash.desktop.NativeApplication;
+	import flash.display.NativeWindowDisplayState;
 	import flash.display.Screen;
 	import flash.display.Sprite;
-	import common.Framework;
+	import flash.display.StageDisplayState;
+	import flash.events.FullScreenEvent;
 	import flash.events.InvokeEvent;
+	import flash.events.NativeWindowDisplayStateEvent;
+	import fliflixx.scenes.InitializeScene;
 	import fliflixx.scenes.SceneController;
 	import fliflixx.system.Menu;
 	import fliflixx.system.ObjectManager;
-	import fliflixx.scenes.InitializeScene;
 	
 	public class fliflixx extends Sprite
 	{
@@ -18,6 +22,8 @@ package
 		
 		private var framework:Framework;
 		private var scenecontroller:SceneController;
+		
+		private var menu:Menu;
 		
 		public function fliflixx()
 		{
@@ -34,7 +40,10 @@ package
 		
 		private function onInvoke(e:InvokeEvent):void
 		{
-			new Menu(stage.nativeWindow, this);
+			menu = new Menu(stage.nativeWindow, this);
+			menu.addEventListener(FullScreenEvent.FULL_SCREEN, onFullScreen);
+			
+			stage.nativeWindow.addEventListener(NativeWindowDisplayStateEvent.DISPLAY_STATE_CHANGING, onDisplayStateChanging);
 			
 			stage.stageWidth = 640;
 			stage.stageHeight = 400;
@@ -77,6 +86,26 @@ package
 			scenecontroller.main();
 			scenecontroller.draw();
 			return;
+		}
+		
+		private function onDisplayStateChanging(e:NativeWindowDisplayStateEvent):void 
+		{
+			// 最大化の代わりにフルスクリーンにする
+			if (e.afterDisplayState == NativeWindowDisplayState.MAXIMIZED)
+			{
+				stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
+				e.preventDefault();
+			}
+		}
+		
+		private function onFullScreen(e:FullScreenEvent):void 
+		{
+			if (e.fullScreen == true) {
+				stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
+			}
+			if (e.fullScreen == false) {
+				stage.displayState = StageDisplayState.NORMAL;
+			}
 		}
 	}
 }
