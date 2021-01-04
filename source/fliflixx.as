@@ -12,12 +12,24 @@ package
 	
 	public class fliflixx extends Sprite
 	{
+		[Embed(source = "fliflixx.swf")]
+		private static var SourceSWF:Class;
+		private static var target:Sprite;
+		
 		private var framework:Framework;
 		private var scenecontroller:SceneController;
 		
 		public function fliflixx()
 		{
+			target = this;
+			
 			NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke);
+		}
+		
+		public static function launchAS1():void
+		{
+			target.stage.frameRate = 20;
+			target.addChild(new SourceSWF());
 		}
 		
 		private function onInvoke(e:InvokeEvent):void

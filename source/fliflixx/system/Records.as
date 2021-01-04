@@ -5,7 +5,7 @@ package fliflixx.system
 	
 	public class Records
 	{
-		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_RECORD");
+		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_AS3_RECORD");
 		public var data:Object = new Object();
 		
 		public function Records()

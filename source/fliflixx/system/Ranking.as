@@ -6,7 +6,7 @@ package fliflixx.system
 	public class Ranking
 	{
 		private const RANKING_MAX:uint = 10;
-		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_RANKING");
+		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_AS3_RANKING");
 		public var data:Array = new Array();
 		
 		public function Ranking()

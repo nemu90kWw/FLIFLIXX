@@ -5,7 +5,7 @@ package fliflixx.system
 	
 	public class Option
 	{
-		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_OPTION");
+		private var func_ldm:LocalDataManager = new LocalDataManager("FLIFLIXX_AS3_OPTION");
 		public var data:Array = new Array();
 		
 		public function Option()
