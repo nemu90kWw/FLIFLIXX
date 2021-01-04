@@ -8,7 +8,7 @@ package
 	import fliflixx.scenes.SceneController;
 	import fliflixx.system.Menu;
 	import fliflixx.system.ObjectManager;
-	import fliflixx.scenes.LoadingScene;
+	import fliflixx.scenes.InitializeScene;
 	
 	public class fliflixx extends Sprite
 	{
@@ -68,7 +68,7 @@ package
 			addChild(cursor);
 			
 			scenecontroller = new SceneController(framework.screen);
-			scenecontroller.addScene(new LoadingScene());
+			scenecontroller.addScene(new InitializeScene());
 			return;
 		}
 		
