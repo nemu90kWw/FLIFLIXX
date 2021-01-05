@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
-  <id>FLIFLIXX</id>
+  <id>com.90k-games.fliflixx</id>
+
+  <versionLabel>1.0</versionLabel>
   <versionNumber>1.0</versionNumber>
+  <copyright>©2005 ねむ◆nemu90kWw.</copyright> 
+
   <filename>fliflixx</filename>
+  <installFolder>90k-games</installFolder>
+  <programMenuFolder>90k-games/fliflixx</programMenuFolder>
+
   <name>FLIFLIXX</name>
+  <description></description>
+
   <initialWindow>
     <title>FLIFLIXX</title>
     <content>fliflixx.dat</content>
     <systemChrome>standard</systemChrome>
     <transparent>false</transparent>
     <visible>false</visible>
+    <resizable>false</resizable>
     <minimizable>true</minimizable>
     <maximizable>true</maximizable>
-    <resizable>false</resizable>
   </initialWindow>
-  <!-- 
-	More options:
-	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
-	-->
+
   <icon>
     <image16x16>icons/icon16.png</image16x16>
     <image32x32>icons/icon32.png</image32x32>
     <image48x48>icons/icon48.png</image48x48>
     <image100x100>icons/icon100.png</image100x100>
   </icon>
+
+  <supportedProfiles>desktop extendedDesktop</supportedProfiles>
+  <customUpdateUI>false</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+
 </application>
