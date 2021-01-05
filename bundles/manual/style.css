@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* -------- Flash -------- */
+object{
+  margin-right:auto;
+  margin-left:auto;
+  border-style:solid;
+  border-width:2px;
+  border-color:#FFFFFF;
+}
+
+/* -------- 基本 -------- */
+body{
+  text-align:center;
+  font-size:14px;
+  line-height:1.4em;
+  background-color:#505848;
+  color:#FFFFFF;
+  margin:0px 0px 40px;
+}
+
+ul{
+  margin:10px 0px;
+  padding:0px;
+  list-style-type:none;
+}
+
+/* -------- レイアウト -------- */
+div.main{
+  margin:80px 0px 40px;
+}
+
+div.swf{
+  background-color:#404838;
+}
+
+div.scalingbutton{
+  background-color:#606858;
+}
+
+div.navigation{
+}
+
+div.counter{
+  text-align:right;
+  margin-right:10px;
+}
+
+/* -------- リンク -------- */
+a{
+  color:#00F0FF;
+}
+a:visited{
+  color:#FF50FF;
+}
+a:hover{
+  color:#F0F818;
+}
+a:active{
+  color:#F80838;
+}
+
+a img{
+  border-width:0px;
+}
+
+/* -------- 段落 -------- */
+p{
+  margin:0px 0px 12px;
+}
+
+h1{
+  display:none;
+}
+
+h2{
+  font-size:16px;
+  background-color:#004080;
+  text-align:left;
+  margin:20px 0px 4px;
+  padding:2px;
+  width:80%;
+}
+
+/* -------- マニュアル -------- */
+div.manual{
+  background-color:#000000;
+  text-align:left;
+  width:700px;
+  margin:40px 0px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:10px;
+}
+
+table.char{
+  background-color:#004080;
+  padding-left:0px;
+}
+
+td.thumbnail{
+  font-weight:bold;
+  font-size:14px;
+  padding:0px;
+}
+
+td.description{
+  background-color:#000000;
+  font-size:12px;
+  padding:2px;
+}
+
+div.footer{
+  text-align:right;
+  font-size:12px;
+}
