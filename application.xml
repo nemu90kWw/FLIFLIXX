@@ -6,7 +6,7 @@
   <name>FLIFLIXX</name>
   <initialWindow>
     <title>FLIFLIXX</title>
-    <content>fliflixx.swf</content>
+    <content>fliflixx.dat</content>
     <systemChrome>standard</systemChrome>
     <transparent>false</transparent>
     <visible>false</visible>

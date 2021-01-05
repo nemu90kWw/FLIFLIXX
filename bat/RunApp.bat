@@ -7,7 +7,7 @@ set PAUSE_ERRORS=1
 call bat\SetupSDK.bat
 call bat\SetupApp.bat
 
-robocopy bundles bin /MIR /XF %AIR_NAME%.swf *.fla *.as /NDL /NJH /NJS /NP
+robocopy bundles bin /MIR /XF %AIR_NAME%.dat *.fla *.as /NDL /NJH /NJS /NP
 
 echo.
 echo Starting AIR Debug Launcher...

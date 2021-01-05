@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\fliflixx.swf" />
+    <movie path="bin\fliflixx.dat" />
     <movie fps="60" />
     <movie width="640" />
     <movie height="400" />
