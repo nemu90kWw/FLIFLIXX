@@ -24,4 +24,10 @@
 	More options:
 	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
 	-->
+  <icon>
+    <image16x16>icons/icon16.png</image16x16>
+    <image32x32>icons/icon32.png</image32x32>
+    <image48x48>icons/icon48.png</image48x48>
+    <image100x100>icons/icon100.png</image100x100>
+  </icon>
 </application>
