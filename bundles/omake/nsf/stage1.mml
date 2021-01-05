@@ -1,0 +1,166 @@
+#TITLE          FLIFLIXX - STAGE1
+#COMPOSER       nemu90kWw.
+#PROGRAMER      nemu90kWw.
+
+@v0 = {9 9 8 8 8 7 7 7 7 6}
+@v1 = {8 4 3 2 2 1 1 1 0}
+@v2 = {8 7 7 6 6 6 5}
+
+@MP1 = {60 2 2}
+
+ABCD t180
+
+ABCD L
+
+A l8 o5 @q2 @v0 @2 MP1
+A r4g+4.a4.>c+4.<b2r
+A r4g+4.a4.>f+4.e4r<<@1g+a
+A [b4.g+4ab4
+A >d+4c+<b>c+d+r<
+A b1.
+A r4.g+a
+A b4.g+4ab4
+A >d+4c+<b>c+d+rf+
+A rd+<rb1
+A r4.>c+d+
+A e4.<b4>c+e4
+A g+4.e4rc+d+
+A e4.<b4>c+e4
+A g+4.e4rc+d+
+A e4.<b4>c+eg+4
+A rf+rerf+|g+2
+A rg+.a.b
+A f+2r4<g+a]2>
+A g+1.
+A rc4d+4
+A [ed+4c+4d+ef+4.
+A e4d+.e.c+<
+A b4.g+1^4
+A rg+4
+A ag+4f+4g+|ab4
+A rarg+aa+b1.
+A r4.>
+A d+4]2<a4
+A >c+4.<a2r
+A >c+<b4a4b>c+4
+A e4c+4f+.g+.a
+A b1.
+
+A r@2>g+ab4.
+A e4d+reb4.
+A e4d+reb2.
+A r>c+<b4
+A rg+4f+4g+e4
+A rc+4c+d+e<b4>
+A re4g+4b4
+A a4.f+4g+a4
+A g+4.a16g+16f+4rb4.
+A e4d+reb4.
+A e4d+reb2.
+A r>c+<b4
+A rg+4a4be4
+A rc+4c+d+f+e4
+A rb4g+4e4
+A c+4c+d+rf+re2.
+A r4.
+
+B l8 o5 v7 @v2 @2
+B r4e4.f+4.a4.g+2r
+B r4e4.f+4.a4.g+4r4.<
+B [r1]34
+B r2.d+4<
+B b4.g+4rb4
+B >c+4.<a4.>c+4
+B d+4.<b4.>d+4
+B e1^4.
+B r4.>c4
+B c+<b4a4b>c+d+4.
+B c+4<b.>c+.<a
+B g+4.e4.d+4<
+B b4.g+4rb4
+B >c+<b4a4b>c+4
+B e4.c+2r
+B ed+4c+4d+e4
+B g+4e4a.b.>c+
+B d+1.<
+
+B r>g+ab4.
+B e4d+reb4.
+B e4d+reb2.
+B r>c+<b4
+B rg+4f+4g+e4
+B rc+4c+d+e<b4>
+B re4g+4b4
+B a4.f+4g+a4
+B g+4.a16g+16f+4rb4.
+B e4d+reb4.
+B e4d+reb2.
+B r>c+<b4
+B rg+4a4be4
+B rc+4c+d+f+e4
+B rb4g+4e4
+B c+4c+d+rf+re2.
+B r4.
+
+C l8o3
+C [e1.erb4]2
+C [[e>e<]4
+C [e>e<]4
+C [e>e<]4
+C e>e<f+>f+<g+>g+<e>e<
+C [e->e-<]4
+C [e->e-<]4
+C [e->e-<]4
+C e->e-<e>e<f+>f+<e->e-<
+C [d>d<]4
+C [d>d<]4
+C [c+>c+<]4
+C f+>f+<f+>f+<f+>f+<g+>g+<
+C [a>a<]4
+C [a>a<]4|
+C [b>b<]4
+C b>bc+>c+<d+>d+<<b>b<]2
+C [g+>g+<]4
+C g+>g+16.r32g+16.r32g+16.r32<g+r>g+4<
+C [a>a<]4
+C a>a<a>a<a>a<b>b<
+C [e>e<]4
+C e>e<f+>f+<g+>g+<e>e<
+C [f+>f+<]4
+C [b>b<]4
+C [e>e<]4
+C e>e<f+>f+<g>g<g+>g+<
+C [a>a<]4
+C a>a<a>a<a>a<b>b<
+C [e>e<]4
+C e>e<f+>f+<g+>g+<e>e<
+C [f+>f+<]4
+C f+>f+<f+>f+<f+>f+<g+>g+<
+C [a>a<]4
+C [a>a<]4
+C [b>b<]4
+C b>bc+>c+<d+>d+<<b>b<
+C [e>e<]4
+C [e->e-<]4
+C [d>d<]4
+C [c+>c+<]4
+C [a>a<]4
+C [g+>g+<]4
+C [f+>f+<]4
+C b>bc+>c+<d+>d+<<b>b<
+C [e>e<]4
+C [e->e-<]4
+C [d>d<]4
+C [c+>c+<]4
+C [a>a<]4
+C [g+>g+<]4
+C f+>f+<f+br>b<be4
+C >e16.r32e16.r32e16.r32<erb4
+
+D l8 o0 @v1
+D [aa16a16aa4ae4aaea4ae4]2
+D [[a4ea4ae4]3|a4e4aae4]8
+D aeeea4e4
+D [a4e4aae4aaea4ae4]9
+D [a.a16ea4ae4]15
+D aeeea4e4

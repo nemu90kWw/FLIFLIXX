@@ -1,0 +1,230 @@
+
+R,R,R
+*
+
+;=======================================
+;=                                     =
+;=        オールクリア                 =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T160L8O2					,L8O6						,L8O5
+B>F+B<BB->FB-<B-			,D+C+16<B16>C+D+F4C+4<		,F+4G+F+16G+16A+4F+4
+G+>D+G+<G+F+>C+F+<F+		,BA+16G+16A+BA+4>C+4		,D+4F+D+16F+16F4E4
+B>F+B<BB->FB-<B-			,D+C+16<B16>C+D+F4>C+4<		,D+C+16<B16>C+D+FG+16A+16>C+<F+
+G+>D+G+4F+1					,BA+G+A+F+1					,BA+G+BA+1
+R1R1R1R1R1R1R1R1R1R1R1R1	,R1R1R1R1R1R1R1R1R1R1R1R1	,R1R1R1R1R1R1R1R1R1R1R1R1
+*
+
+;=======================================
+;=                                     =
+;=        めろぱ                       =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T180L8O2							,L8O5					,L8O5
+E1.ERB4								,R4G+4.A4.>C+4.<B2R		,R4E4.F+4.A4.G+2R
+E1.ERB4								,R4G+4.A4.>F+4.E4R<G+A	,R4E4.F+4.A4.G+4R4.
+E>E<E>E<E>E<E>E<					,B4.G+4AB4				,R1
+E>E<E>E<E>E<E>E<					,>D+4C+<B>C+D+R<		,R1
+E>E<E>E<E>E<E>E<					,B1.					,R1
+E>E<F+>F+<G+>G+<E>E<				,R4.G+A					,R1
+E->E-<E->E-<E->E-<E->E-<			,B4.G+4AB4				,R1
+E->E-<E->E-<E->E-<E->E-<			,>D+4C+<B>C+D+RF+		,R1
+E->E-<E->E-<E->E-<E->E-<			,RD+<RB1				,R1
+E->E-<E>E<F+>F+<E->E-<				,R4.>C+D+				,R1
+D>D<D>D<D>D<D>D<					,E4.<B4>C+E4			,R1
+D>D<D>D<D>D<D>D<					,G+4.E4RC+D+			,R1
+C+>C+<C+>C+<C+>C+<C+>C+<			,E4.<B4>C+E4			,R1
+F+>F+<F+>F+<F+>F+<G+>G+<			,G+4.E4RC+D+			,R1
+A>A<A>A<A>A<A>A<					,E4.<B4>C+EG+4			,R1
+A>A<A>A<A>A<A>A<					,RF+RERF+G+2			,R1
+B>B<B>B<B>B<B>B<					,RG+.A.B				,R1
+B>BC+>C+<D+>D+<<B>B<				,F+2R4<G+A				,R1
+E>E<E>E<E>E<E>E<					,B4.G+4AB4				,R1
+E>E<E>E<E>E<E>E<					,>D+4C+<B>C+D+R<		,R1
+E>E<E>E<E>E<E>E<					,B1.					,R1
+E>E<F+>F+<G+>G+<E>E<				,R4.G+A					,R1
+E->E-<E->E-<E->E-<E->E-<			,B4.G+4AB4				,R1
+E->E-<E->E-<E->E-<E->E-<			,>D+4C+<B>C+D+RF+		,R1
+E->E-<E->E-<E->E-<E->E-<			,RD+<RB1				,R1
+E->E-<E>E<F+>F+<E->E-<				,R4.>C+D+				,R1
+D>D<D>D<D>D<D>D<					,E4.<B4>C+E4			,R1
+D>D<D>D<D>D<D>D<					,G+4.E4RC+D+			,R1
+C+>C+<C+>C+<C+>C+<C+>C+<			,E4.<B4>C+E4			,R1
+F+>F+<F+>F+<F+>F+<G+>G+<			,G+4.E4RC+D+			,R1
+A>A<A>A<A>A<A>A<					,E4.<B4>C+EG+4			,R1
+A>A<A>A<A>A<A>A<					,RF+RERF+				,R1
+G+>G+<G+>G+<G+>G+<G+>G+<			,G+1.					,R1
+G+>G+16.R32G+16.R32G+16.R32<G+R>G+4<,RC4D+4					,R1
+A>A<A>A<A>A<A>A<					,ED+4C+4D+EF+4.			,R1
+A>A<A>A<A>A<B>B<					,E4D+.E.C+<				,R1
+E>E<E>E<E>E<E>E<					,B4.G+1					,R2.D+4<
+E>E<F+>F+<G+>G+<E>E<				,G+4RG+4				,B4.G+4RB4
+F+>F+<F+>F+<F+>F+<F+>F+<			,AG+4F+4G+AB4			,>C+4.<A4.>C+4
+B>B<B>B<B>B<B>B<					,RARG+AA+B1.			,D+4.<B4.>D+4
+E>E<E>E<E>E<E>E<					,R4.>					,E1
+E>E<F+>F+<G>G<G+>G+<				,D+4					,E4.R4.>C4
+A>A<A>A<A>A<A>A<					,ED+4C+4D+EF+4.			,C+<B4A4B>C+D+4.
+A>A<A>A<A>A<B>B<					,E4D+.E.C+<				,C+4<B.>C+.<A
+E>E<E>E<E>E<E>E<					,B4.G+1					,G+4.E4.D+4<
+E>E<F+>F+<G+>G+<E>E<				,G+4RG+4				,B4.G+4RB4
+F+>F+<F+>F+<F+>F+<F+>F+<			,AG+4F+4G+A4			,>C+<B4A4B>C+4
+F+>F+<F+>F+<F+>F+<G+>G+<			,>C+4.<A2R				,E4.C+2R
+A>A<A>A<A>A<A>A<					,>C+<B4A4B>C+4			,ED+4C+4D+E4
+A>A<A>A<A>A<A>A<					,E4C+4F+.G+.A			,G+4E4A.B.>C+
+B>B<B>B<B>B<B>B<					,B1.					,D+1.<
+B>BC+>C+<D+>D+<<B>B<				,RG+AB4.				,RG+AB4.
+E>E<E>E<E>E<E>E<					,E4D+REB4.				,E4D+REB4.
+E->E-<E->E-<E->E-<E->E-<			,E4D+REB2.				,E4D+REB2.
+D>D<D>D<D>D<D>D<					,R>C+<B4				,R>C+<B4
+C+>C+<C+>C+<C+>C+<C+>C+<			,RG+4F+4G+E4			,RG+4F+4G+E4
+A>A<A>A<A>A<A>A<					,RC+4C+D+E<B4>			,RC+4C+D+E<B4>
+G+>G+<G+>G+<G+>G+<G+>G+<			,RE4G+4B4				,RE4G+4B4
+F+>F+<F+>F+<F+>F+<F+>F+<			,A4.F+4G+A4				,A4.F+4G+A4
+B>BC+>C+<D+>D+<<B>B<				,G+4.A16G+16F+4RB4.		,G+4.A16G+16F+4RB4.
+E>E<E>E<E>E<E>E<					,E4D+REB4.				,E4D+REB4.
+E->E-<E->E-<E->E-<E->E-<			,E4D+REB2.				,E4D+REB2.
+D>D<D>D<D>D<D>D<					,R>C+<B4				,R>C+<B4
+C+>C+<C+>C+<C+>C+<C+>C+<			,RG+4A4BE4				,RG+4A4BE4
+A>A<A>A<A>A<A>A<					,RC+4C+D+F+E4			,RC+4C+D+F+E4
+G+>G+<G+>G+<G+>G+<G+>G+<			,RB4G+4E4				,RB4G+4E4
+F+>F+<F+BR>B<BE4					,C+4C+D+RF+RE2.			,C+4C+D+RF+RE2.
+>E16.R32E16.R32E16.R32<ERB4			,R4.					,R4.
+*
+
+;=======================================
+;=                                     =
+;=        CLAUDETTE                    =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T150L8O1N1				,L16O4N0				,L8O4N0
+A>A<G>G<A>A<B->B-<		,R1						,R1
+A>A<G>G<F+>F+<F>F<		,R1						,R1
+A>A<G>G<A>A<B->B-<		,R1						,R1
+A>A<G>G<F+>F+<F>R<		,R2.RAB>C				,R1
+A>A<G>G<A>A<B->B-<		,E8E-R2R8<AB>C			,R1
+A>A<G>G<F+>F+<F>F<		,G8F+R8.CR8.>C8R8		,R2RGR
+A>A<G>G<A>A<B->B-<		,D4C8R4.C8R8			,A4GR4.GR
+A>A<G>G<F+>F+<F>F<		,D4C8R2R<<G>CF+			,A4GR2.
+B->B-<A->A-<B->B-<B>B<	,EC<GR8.FR8.GG+ARDD-	,R1
+B->B-<A>A<A->A-<G>G<	,C8<G>RR4.G8R8			,R2RDR
+A>A<G>G<A>A<B->B-<		,A2.>C8R8				,E2.GR
+A>A<G>G<B-4>R<G16G+16	,D2.R4.					,A2.R4.
+*
+
+;=======================================
+;=                                     =
+;=        よそよそ                     =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T200L8N1O2						,L8N2O5							,L4N1O4
+B-R>B-4<B-R>B-4E-RB-4CR>C4<<	,FRFRF4GAGRGRB-AGA				,RDRDRE-RF
+B-R>B-4<B-R>B-4E-RB-4CR>C4<<	,F1R2R8CDE-						,RDRDRE-RF
+B-R>B-4<B-R>B-4E-RB-4CR>C4<<	,FRFRF4GAGRGRB-AGA				,RDRDRE-RF
+B-R>B-4<B-R>B-4E-RB-4CR>C4<		,F1R2R8<AB->C					,RDRDRE-RF
+DRA4DRA4<GR>B-4<GR>B-4			,DRDRD4AG1R8					,RDRDRDRD
+DRA4DRA4<GR>B-4<GR>B-4			,DRDRD4AB-G4.RFD<B->D			,RDRDRDRD
+CR>C4<CR>C4<<FR>A4<FR>A4<		,DCDE-<G4>E-4D4.E-16D16C<B-AB-	,RE-RE-RCRC
+B-R>B-4<B-R>B-4<B-R>B-4D-4D4	,B-1R2>A4B-4					,RDRDRDEF
+E-RB-4E-RB-4E-RB-4E-RB-4<		,G1>D2C4<B-4					,RE-RE-RE-RE-
+B-R>B-4<B-R>B-4<B-R>B-4<B-R>B-4	,A4FDRFRD2RC4D4					,RDRDRDRD
+CRB-4CRB-4<FR>A4<FR>A4<			,E-4D4CDE-FE-4F4G4A4			,RE-RE-RCRC
+B-R>B-4<B-R>B-4<B-R>B-4D-4D4	,F4D4<B-4>D4F4.RA4B-4			,RDRDRDEF
+E-RB-4E-RB-4E-RB-4E-RB-4<		,G1>D2E-4D4						,RE-RE-RE-RE-
+B-R>B-4<B-R>B-4<GRG4A4B4>		,C4<AFRFA>C<B4G4>D2				,RDRDR<B>CD
+CR>C4<CR>C4<<FR>F4<FR>F4<		,C4<G4>E-DC<B-A4.GA4.B-			,RE-RE-RCRC
+B-R>B-4<B-R>B-4<B-RF4G4A4		,B-1R1							,RDRDR1
+*
+
+;=======================================
+;=                                     =
+;=        秒速60ドットのランクイン     =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T150L16O2										,L16O5								,L16O5
+G8.>GR<GF+8G>GR<G8RG>GR<GF+8GGR>G<				,F+8ER8F+ER8F+8ER8F+ER8F+8.ER8		,D8C+R8DC+R8D8C+R8DC+R8D8.C+R8
+F+8.>F+R<F+F8F+>F+R<F+B8F+>C+R<F+>D8<F+>ERF+<	,E8DR8EDR8E8DR8EDR8E8.DR8			,C+8<B>R8C+<B>R8C+8<B>R8C+<B>R8C+8.<B>R8
+G8.>GR<GF+8G>GR<G8RG>GR<GF+8GGR>G<				,F+8ER8F+ER8F+8ER8F+ER8F+8.ER8		,D8C+R8DC+R8D8C+R8DC+R8D8.C+R8
+A8.>ER<AG+8AA8>AD8<D>ER<D>F+8<D>ARD<			,G8F+R8GF+R8G8F+R8GF+R8G8.F+R8		,E8DR8EDR8E8DR8EDR8E8.DR8
+G8.>GR<GF+8G>GR<G8RG>GR<GF+8GGR>G<				,F+8ER8F+ER8F+8ER8F+ER8F+8.ER8		,D8C+R8DC+R8D8C+R8DC+R8D8.C+R8
+F+8.>F+R<F+F8F+>F+R<F+B8F+>C+R<F+>D8<F+>ERF+<	,E8DR8EDR8E8DR8EDR8E8.DR8			,C+8<B>R8C+<B>R8C+8<B>R8C+<B>R8C+8.<B>R8
+G8.>GR<GF+8G>GR<G8RG>GR<GF+8GGR>G<				,F+8ER8F+ER8F+8ER8F+ER8F+8.ER8		,D8C+R8DC+R8D8C+R8DC+R8D8.C+R8
+A8.>ER<AG+8AA8>AD8<D>ER<D>F+8<D>ARD<			,G8F+R8GF+R8G8F+R8GF+R8G8F+E8D		,E8DR8EDR8E8DR8EDR8E8R4
+G8R>GR<GF+RG>G8R<G8R>GR<GF+RG>G8R<				,<BR8>F+8.R8F+E8D<B-R8>F8.R8FE8D	,R1.
+A8R>AR<A8R>C+<A8>ED8<A>ER<A>F+8<A>ARC+<			,ER8D8.ER8ARF+F+4.R8F+E8D			,R1.
+G8R>GR<GF+RG>G8R<G8R>GR<GF+RG>G8R<				,<BR8>F+8.R8F+E8D<B-R8>F8.R8FE8D	,R1.
+A8R>AR<A8R>C+<A8>ED8<A>ER<A>F+8<A>ARC+<			,ER8D8.ER8ARF+F+4.R8F+G8A			,R1.
+G8R>GR<GF+8G>G8R<G8R>GR<G>DR<G>ER<G				,BR8D8BR8DB8.R4RB>C+8<BA8G			,R1.
+F+8R>C+R<F+>F+8C+<F+RB4<B>RB8R<B>B8B-			,A8F+G8EC+8A+>C+8DD4.R8<B>D8E		,R1.
+A8RAR>A<AR>A<ARG+A8R>A8.<A8>G8A8<				,F+8GF+8D<BR>F+R8E4DR8C+8D8E8		,R1.
+D8.>DR<DDR>D<DR>D<DR8>DR8<DR8A8.				,D2.R2.								,R1.
+*
+
+;=======================================
+;=                                     =
+;=        ゲームオーバー               =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T180L4N2O4	,L8N0O5				,
+R1			,FE16D16EFG>C<C>C<	,R1
+FEDG		,A>C<G>C<F>C<F>C<	,R1
+C.<C2.C.R2	,E1.R2				,R1R1
+*
+
+;=======================================
+;=                                     =
+;=        ボツ曲                       =
+;=        --------------------         =
+;=        2005 (C) ◆nemu90kWw.        =
+;=                                     =
+;=======================================
+
+T150L8O2N1								,L16O4N0							,L16O4N0
+FR16F16RA-F16RB-16						,R2.								,R2.								
+RF16B>C16<B-A-16FE-16					,R2.								,R2.								
+FR16F16RA-F16RB-16						,R2.								,R2.								
+R<B-16>R16R2							,R2RA-B->C							,R2.						
+FR16F16RA-F16RB-16						,E-1<								,A-1								
+RF16B>C16<B-A-16FE-16					,R4RA-B->C							,R2						
+FR16F16RA-F16RB-16						,D1<								,A-1								
+RF16B16>C16<B-16A-F16E-E16				,R4RA-B->C							,R2							
+FR16F16RA-F16RB-16						,E-2R8.								,A-2R8.								
+RF16B>C16<B-A-16FE-16					,A-2R4								,>C2<R4								
+FR16F16RA-F16RB-16						,D1									,A-1									
+RF16B>C16<B-A-16F.						,RR2								,RR2								
+ER16E16RGE16RA16						,D2.								,G2.								
+RE16B-B16AG16ED16						,R8.<EF+GAGABAB>					,R2.
+D+R16D+16RF+D+16RG+16					,C+2R8.								,F+2R8.								
+RD+16A16A+16G+16F+D+16DD+16				,F+2R4R<							,A+2R4R							
+C+R16C+16REC+16RF+16					,B2.								,E2.								
+RC+16GG+16F+E16C+<B16>					,R8.E8.F+8.G+8.						,R2.
+CR16C16RE-C16RF16						,B-1								,D+1								
+RC16F+16G16F16E-L16C<B->B-<B->			,R4RN1FB->E-						,R2							
+F>F<F>F<F>F<F>F<F>F<F>F<				,F<A->E-<A->F<A->E-<A->E-<A->F<A-	,R2.
+F+>F+<F+>F+<F+>F+<F+>F+<F+>F+<F+>F+<	,B->FGA-GFG<B>A-<B>B-<B>			,R2.		
+G>G<G>G<G>G<G>G<G>G<G>G<				,>C<CB-CA-CGD-A-D-B-D-				,R2.			
+G+>G+<G+>G+<G+>G+<G+>G+<G+>G+<G+>G+<	,E->CE-D-C<B->C<E>D-<E>E-<E>		,R2.		
+F>F<F>F<F>F<F>F<F>F<F>F<				,F<A->E-<A->F<A->E-<A->E-<A->F<A-	,N1>F<A->E-<A->F<A->E-<A->E-<A->F<A-	
+F+>F+<F+>F+<F+>F+<F+>F+<F+>F+<F+>F+<	,B->FGA-GFG<B>A-<B>B-<B>			,B->FGA-GFG<B>A-<B>B-<B>			
+G>G<G>G<G>G<G>G<G>G<G>G<				,>C<CB-CA-CGD-A-D-B-D-				,>C<CB-CA-CGD-A-D-B-D-				
+G+>G+<G+>G+<G+>G+<L8G+.>R<A16			,E->CE-D-C<B->CD-E-CR<<A			,E->CE-D-C<B->CD-E-CR8<			
+B.G+.>E-C16RF+16						,B-8.G8.>D8<B>R8F<					,E-8.C+8.G+8ER8B					
+R4.C.<C.								,RF32A-32>EA<B-E>C+8.E8.			,R4.G8.B-8.			
+*

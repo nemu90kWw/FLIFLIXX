@@ -1,0 +1,50 @@
+#TITLE          FLIFLIXX - STAGE3
+#COMPOSER       nemu90kWw.
+#PROGRAMER      nemu90kWw.
+
+@v0 = {7 6 6 5 5 5 4 4 4 4 4 3}
+@v1 = {9 9 8 8 7 7 6 6 6 5 5 5 5 4 4 4 4 4 | 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3}
+@v2 = {5 3 2 1 1 0}
+
+@MP1 = {40 2 2}
+
+ABCD t200
+
+ABCD L
+
+A l4 @q1 o4 @2 @v0
+A [rdrdre-rf]4
+A [rd]8
+A [re-re-rcrcrdrdrdef[re-]4rdrdr|drd]2<b>cd
+A re-re-rcrc
+A rdrdr1
+
+B l8 @q2 o5 @1 @v1 MP1
+B [frfrf4gagrgrb-agaf1r2r8|cde-]2<ab->c
+B [drdrd4a|g1r8]2b-g4.rfd<b->d
+B dcde-<g4>e-4d4.e-16d16c<b-ab-
+B b-1r2>a4b-4
+B g1>d2c4<b-4
+B a4fdrfrd2rc4d4
+B e-4d4cde-fe-4f4g4a4
+B f4d4<b-4>d4f4.ra4b-4
+B g1>d2e-4d4
+B c4<afrfa>c<b4g4>d2
+B c4<g4>e-dc<b-a4.ga4.b-
+B b-1r1
+
+C l8 @q1 o3 @2
+C [b-r>b-4<b-r>b-4e-rb-4cr>c4<<]4>
+C [dra4dra4<gr>b-4<gr>b-4]2
+C cr>c4<cr>c4<<fr>a4<fr>a4<
+C [[b-r>b-4<]3>d-4d4
+C [e-rb-4]4<|
+C [b-r>b-4<]4>
+C crb-4crb-4<fr>a4<fr>a4<]2
+C b-r>b-4<b-r>b-4<grg4a4b4>
+C cr>c4<cr>c4<<fr>f4<fr>f4<
+C b-r>b-4<b-r>b-4<b-rf4g4a4
+
+D l4 o0 @v2
+D [ae]16
+D [[ae]15ee]3

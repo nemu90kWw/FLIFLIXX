@@ -1,0 +1,31 @@
+#TITLE          FLIFLIXX - GAMEOVER
+#COMPOSER       nemu90kWw.
+#PROGRAMER      nemu90kWw.
+
+@v0 = {9 9 8 8 8 7 7 7 7 6}
+@v1 = {9 5 4 3 2 2 1 1 1 0}
+@v2 = {9 6 5 5 4 4 4 3 3 3 3 2 2 2 2 2 1 1 1 1 1 1 1 1 0}
+
+ABCD t180
+
+ABCD L
+
+A l8 o4 @q2 @v0 @1
+A fe16d16efg>c<c>c<
+A a>c<g>c<f>c<f>c<
+A e1.r2
+
+B l4 o4 v7 @2
+B c16r2.^8.
+B fedg
+B c.<c2.^4.r2
+
+C l4 o5
+C r1
+C r1
+C r1r1
+
+D l8 o0 @v1
+D ae16e16eaeae4
+D a4e4aae4
+D a.a.@v2a2.r4.r2
