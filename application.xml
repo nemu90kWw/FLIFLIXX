@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8"?>
 <application xmlns="http://ns.adobe.com/air/application/32.0">
-	
-	<id>FLIFLIXX</id> 
-	<versionNumber>1.0</versionNumber> 
-	<filename>FLIFLIXX</filename> 
-	
-	<name>FLIFLIXX</name> 
-	<description></description> 
-	<copyright></copyright> 
-	
-	<initialWindow> 
-		<title>FLIFLIXX</title> 
-		<content>FLIFLIXX.swf</content> 
-		<systemChrome>standard</systemChrome> 
-		<transparent>false</transparent> 
-		<visible>false</visible> 
-		<minimizable>true</minimizable> 
-		<maximizable>true</maximizable> 
-		<resizable>false</resizable> 
-	</initialWindow> 
-	
-	<!-- 
+  <id>FLIFLIXX</id>
+  <versionNumber>1.0</versionNumber>
+  <filename>fliflixx</filename>
+  <name>FLIFLIXX</name>
+  <initialWindow>
+    <title>FLIFLIXX</title>
+    <content>fliflixx.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>false</visible>
+    <minimizable>true</minimizable>
+    <maximizable>true</maximizable>
+    <resizable>false</resizable>
+  </initialWindow>
+  <!-- 
 	More options:
 	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
 	-->

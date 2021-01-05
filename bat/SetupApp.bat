@@ -10,9 +10,8 @@ cd %~dp0 & cd ..
 :: NOTICE: all paths are relative to project root
 
 :: Your certificate information
-set CERT_NAME="FLIFLIXX"
-set CERT_PASS=fd
-set CERT_FILE="bat\FLIFLIXX.p12"
+set CERT_NAME="fliflixx"
+set CERT_FILE="bat\fliflixx.p12"
 set SIGNING_OPTIONS=-storetype pkcs12 -keystore %CERT_FILE% -storepass %CERT_PASS%
 
 :: Application descriptor
@@ -28,7 +27,7 @@ set APP_ID=%APP_ID: =%
 
 :: Output
 set AIR_PATH=air
-set AIR_NAME=FLIFLIXX
+set AIR_NAME=fliflixx
 
 :validation
 findstr /C:"<id>%APP_ID%</id>" "%APP_XML%" > NUL

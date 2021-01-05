@@ -5,14 +5,17 @@ cd %~dp0 & cd ..
 
 if not exist %CERT_FILE% goto certificate
 
-:: AIR output
 if not exist %AIR_PATH% md %AIR_PATH%
-set OUTPUT=%AIR_PATH%\%AIR_NAME%%AIR_TARGET%.air
+set OUTPUT=%AIR_PATH%\%AIR_NAME%
 
-:: Package
-echo.
-echo Packaging %AIR_NAME%%AIR_TARGET%.air using certificate %CERT_FILE%...
-call adt -package %OPTIONS% %SIGNING_OPTIONS% %OUTPUT% %APP_XML% %FILE_OR_DIR%
+:: AIR output
+echo Packaging %AIR_NAME%.air using certificate %CERT_FILE%...
+call adt -package %OPTIONS% %SIGNING_OPTIONS% %OUTPUT%.air %APP_XML% %FILE_OR_DIR%
+if errorlevel 1 goto failed
+
+:: EXE output
+echo Packaging %AIR_NAME%.exe using certificate %CERT_FILE%...
+call adt -package %OPTIONS% %SIGNING_OPTIONS% -target bundle %OUTPUT% %APP_XML% %FILE_OR_DIR%
 if errorlevel 1 goto failed
 goto end
 
