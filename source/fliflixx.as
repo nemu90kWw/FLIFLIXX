@@ -24,6 +24,7 @@ package
 		private var scenecontroller:SceneController;
 		
 		private var menu:Menu;
+		private var focusRect:Sprite;
 		
 		public function fliflixx()
 		{
@@ -40,6 +41,11 @@ package
 		
 		private function onInvoke(e:InvokeEvent):void
 		{
+			focusRect = new Sprite();
+			focusRect.graphics.beginFill(0, 1);
+			focusRect.graphics.drawRect(0, 0, 640, 400);
+			addChild(focusRect);
+			
 			menu = new Menu(stage.nativeWindow, this);
 			menu.addEventListener(FullScreenEvent.FULL_SCREEN, onFullScreen);
 			

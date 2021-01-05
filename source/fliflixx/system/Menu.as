@@ -72,6 +72,7 @@ package fliflixx.system
 			
 			nativeWindow.stage.addEventListener(FullScreenEvent.FULL_SCREEN, onFullScreen);
 			nativeWindow.menu = menu;
+			root.contextMenu = displayMenu;
 		}
 		
 		private function onFullScreen(e:FullScreenEvent):void 
