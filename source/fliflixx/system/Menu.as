@@ -76,6 +76,10 @@ package fliflixx.system
 			redrawRegionItem.addEventListener(Event.SELECT, toggleRedrawRegions);
 			
 			// ヘルプ
+			helpMenu.addItem(createMenuItem("マニュアルを開く...")).addEventListener(Event.SELECT, function(e:Event):void {
+				navigateToURL(new URLRequest("manual/index.html"));
+			});
+			helpMenu.addItem(createSeparator());
 			helpMenu.addItem(createMenuItem("http://90k-games.com/")).addEventListener(Event.SELECT, function(e:Event):void {
 				navigateToURL(new URLRequest("http://90k-games.com/"));
 			});
