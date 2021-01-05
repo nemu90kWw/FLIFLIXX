@@ -11,6 +11,7 @@ package fliflixx.system
 	import flash.net.URLRequest;
 	import flash.net.navigateToURL;
 	import flash.profiler.showRedrawRegions;
+	import flash.ui.Keyboard;
 
 	public class Menu extends EventDispatcher
 	{
@@ -66,6 +67,8 @@ package fliflixx.system
 			
 			// 表示
 			fullScreenItem = displayMenu.addItem(createMenuItem("フルスクリーン", "S"))
+			fullScreenItem.keyEquivalent = "\renter";
+			fullScreenItem.keyEquivalentModifiers = [Keyboard.ALTERNATE];
 			fullScreenItem.addEventListener(Event.SELECT, toggleFullScreen);
 			
 			displayMenu.addItem(createSeparator());
