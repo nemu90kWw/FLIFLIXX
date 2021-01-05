@@ -18,7 +18,7 @@ package common
 			buffer  = bmp;
 			
 			target.addChild(dispobj);
-			dispobj.graphics.beginBitmapFill(bmp);
+			dispobj.graphics.beginBitmapFill(bmp, null, false, true);
 			dispobj.graphics.drawRect(0, 0, bmp.width, bmp.height);
 			
 			return;
