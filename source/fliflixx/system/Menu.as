@@ -10,6 +10,7 @@ package fliflixx.system
 	import flash.events.FullScreenEvent;
 	import flash.net.URLRequest;
 	import flash.net.navigateToURL;
+	import flash.profiler.showRedrawRegions;
 
 	public class Menu extends EventDispatcher
 	{
@@ -21,6 +22,7 @@ package fliflixx.system
 		private var helpMenu:NativeMenu = new NativeMenu();
 		
 		private var fullScreenItem:NativeMenuItem;
+		private var redrawRegionItem:NativeMenuItem;
 		
 		private function createMenuItem(label:String, mnemonic:String = ""):NativeMenuItem
 		{
@@ -33,6 +35,11 @@ package fliflixx.system
 			}
 			
 			return item;
+		}
+		
+		private function createSeparator():NativeMenuItem
+		{
+			return new NativeMenuItem("", true);
 		}
 		
 		private function addSubMenu(submenu:NativeMenu, label:String, mnemonic:String = ""):NativeMenuItem
@@ -61,6 +68,10 @@ package fliflixx.system
 			fullScreenItem = displayMenu.addItem(createMenuItem("フルスクリーン", "S"))
 			fullScreenItem.addEventListener(Event.SELECT, toggleFullScreen);
 			
+			displayMenu.addItem(createSeparator());
+			redrawRegionItem = displayMenu.addItem(createMenuItem("再描画領域を表示"));
+			redrawRegionItem.addEventListener(Event.SELECT, toggleRedrawRegions);
+			
 			// ヘルプ
 			helpMenu.addItem(createMenuItem("http://90k-games.com/")).addEventListener(Event.SELECT, function(e:Event):void {
 				navigateToURL(new URLRequest("http://90k-games.com/"));
@@ -87,6 +98,20 @@ package fliflixx.system
 			}
 			else {
 				dispatchEvent(new FullScreenEvent(FullScreenEvent.FULL_SCREEN, false, false, false, true));
+			}
+		}
+		
+		private function toggleRedrawRegions(e:Event):void
+		{
+			if (redrawRegionItem.checked == false)
+			{
+				redrawRegionItem.checked = true;
+				showRedrawRegions(true);
+			}
+			else
+			{
+				redrawRegionItem.checked = false;
+				showRedrawRegions(false);
 			}
 		}
 	}

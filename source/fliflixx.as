@@ -20,7 +20,7 @@ package
 		private static var SourceSWF:Class;
 		private static var target:Sprite;
 		
-		private var framework:Framework;
+		private static var framework:Framework;
 		private var scenecontroller:SceneController;
 		
 		private var menu:Menu;
@@ -35,6 +35,8 @@ package
 		
 		public static function launchAS1():void
 		{
+			framework.abort();
+			
 			target.stage.frameRate = 20;
 			target.addChild(new SourceSWF());
 		}

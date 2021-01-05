@@ -47,6 +47,11 @@ package common
 			return;
 		}
 		
+		public function abort():void
+		{
+			root.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+		}
+		
 		// --------------------------------//
 		// メインループ
 		// --------------------------------//
