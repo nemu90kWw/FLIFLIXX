@@ -5,7 +5,9 @@ package
 	import flash.display.NativeWindowDisplayState;
 	import flash.display.Screen;
 	import flash.display.Sprite;
+	import flash.display.StageAlign;
 	import flash.display.StageDisplayState;
+	import flash.display.StageScaleMode;
 	import flash.events.FullScreenEvent;
 	import flash.events.InvokeEvent;
 	import flash.events.NativeWindowDisplayStateEvent;
@@ -53,8 +55,11 @@ package
 			
 			stage.nativeWindow.addEventListener(NativeWindowDisplayStateEvent.DISPLAY_STATE_CHANGING, onDisplayStateChanging);
 			
-			stage.stageWidth = 640;
-			stage.stageHeight = 400;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_LEFT;
+			stage.stageWidth = 640 / stage.contentsScaleFactor;
+			stage.stageHeight = 400 / stage.contentsScaleFactor;
+			scaleX = scaleY = 1 / stage.contentsScaleFactor;
 			
 			// センタリングして表示
 			stage.nativeWindow.x = (Screen.mainScreen.visibleBounds.width - stage.nativeWindow.width) / 2;
