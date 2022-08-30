@@ -56,10 +56,9 @@ package
 			stage.nativeWindow.addEventListener(NativeWindowDisplayStateEvent.DISPLAY_STATE_CHANGING, onDisplayStateChanging);
 			
 			stage.scaleMode = StageScaleMode.NO_SCALE;
-			stage.align = StageAlign.TOP_LEFT;
 			stage.stageWidth = 640 / stage.contentsScaleFactor;
 			stage.stageHeight = 400 / stage.contentsScaleFactor;
-			scaleX = scaleY = 1 / stage.contentsScaleFactor;
+			stage.scaleMode = StageScaleMode.SHOW_ALL;
 			
 			// センタリングして表示
 			stage.nativeWindow.x = (Screen.mainScreen.visibleBounds.width - stage.nativeWindow.width) / 2;
